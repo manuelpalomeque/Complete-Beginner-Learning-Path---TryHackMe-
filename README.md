@@ -31,6 +31,19 @@ Como se cargan los sitios web, HTTP (peticiones), cookies, challenge CTF.
 
 **Suite Burp:**  Funciones, destino, Repeat, challenge. Decoder y Comprarer, Mods, Escáner.
 
+**OWASP Top 10 **: 
+1) Inyección, Inyección de comando del sistema operativo, challenge.
+2) Pérdida de autenticación, challenge.
+3) Exposición de datos confidenciales, challenge.
+4) Entidad externa XML, Lenguaje de marcado extensible, Entidad externa XML - DTD, Entidad externa XML - Carga útil XXE,
+challenge.
+5) Pérdida de Control de Acceso, challenge.
+6) Error de configuración de seguridad, challenge.
+7) Secuencia de Comandos en Sitios Cruzados, challenge.
+8) Deserialización insegura, objetos, deserialización, cookies, ejecucion de codigo.
+9) Componentes con vulnerabilidades conocidas,  explotación, challenge.
+10) Registro y monitoreo insuficientes.
+
 
 ### **_05- Criptografía:_** 
 
