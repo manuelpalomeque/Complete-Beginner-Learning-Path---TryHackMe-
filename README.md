@@ -2,7 +2,7 @@
 
 En este repositorio se encuentran practicos y challenges de diferentes tematicas realizadas en el curso.
 
-#### **_01- Introducción completa para principiantes:_** 
+#### ***_01- Introducción completa para principiantes:_*** 
 Comenzando en CyberSec. Introducción a la investigación, Búsqueda de vulnerabilidades (ExploitDB, NVD, Inglete CVE), 
 Páginas de manuales.
 
@@ -10,9 +10,15 @@ Páginas de manuales.
 Desarrollado en el curso de pre seguridad.
 
  👉 <a href="https://github.com/manuelpalomeque/Pre-Security-Learning-Path---TryHackMe/tree/main/04-%20Fundamentos%20de%20Linux" 
- target="_blank"> Ir al reepo</a>👈
+ target="_blank"> Ir al repositorio</a>👈
 
 #### **_03- Conceptos básicos de explotación de red:_** 
+Modelo OSI, Encapsulación, El modelo TCP/IP, Herramientas de red (Ping, Traceroute, WHOIS, Dig).
+
+**Nmap**: comandos de Nmap, Tipos de escaneos: Escaneos de conexión TCP, Escaneos SYN, Escaneos UDP, Escaneos NULL, FIN y 
+Xmas, Escaneo de red ICMP. NSE Scripts: Descripción general, Trabajando con la NSE, Búsqueda de scripts. Evasión de 
+firewalls.
+
 
 
 #### **_Fundamentos de la piratería web:_**
