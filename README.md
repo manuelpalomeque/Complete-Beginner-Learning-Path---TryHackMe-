@@ -15,9 +15,15 @@ Desarrollado en el curso de pre seguridad.
 #### **_03- Conceptos básicos de explotación de red:_** 
 Modelo OSI, Encapsulación, El modelo TCP/IP, Herramientas de red (Ping, Traceroute, WHOIS, Dig).
 
-**Nmap**: comandos de Nmap, Tipos de escaneos: Escaneos de conexión TCP, Escaneos SYN, Escaneos UDP, Escaneos NULL, FIN y 
-Xmas, Escaneo de red ICMP. NSE Scripts: Descripción general, Trabajando con la NSE, Búsqueda de scripts. Evasión de 
+**Nmap**: comandos de Nmap, Tipos de escaneos: Escaneos de conexión TCP, Escaneos SYN, Escaneos UDP, Escaneos NULL, FIN 
+y Xmas, Escaneo de red ICMP. NSE Scripts: Descripción general, Trabajando con la NSE, Búsqueda de scripts. Evasión de 
 firewalls.
+
+**Wireshark**: Métodos de recolección (network taps, Mac floods, Envenenamiento ARP), Filtrado de capturas y operadores 
+de filtrado (&&, ||, ===, !==, <, >), Disección de paquetes, Tráfico ARP, tráfico ICMP, tráfico TCP, tráfico DNS, 
+tráfico HTTP, tráfico HTTPS. Análisis de Exploit PCAP
+
+SMB (enumeración y explotación), Telnet (enumeración y explotación), FTP (enumeración y explotación)
 
 
 
