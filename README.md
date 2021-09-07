@@ -15,12 +15,12 @@ Desarrollado en el curso de pre seguridad.
 ### **03- Conceptos básicos de explotación de red:** 
 Modelo OSI, Encapsulación, El modelo TCP/IP, Herramientas de red (Ping, Traceroute, WHOIS, Dig).
 
-***Nmap***: 
+***Nmap***:  
 comandos de Nmap, Tipos de escaneos: Escaneos de conexión TCP, Escaneos SYN, Escaneos UDP, Escaneos NULL, FIN 
 y Xmas, Escaneo de red ICMP. NSE Scripts: Descripción general, Trabajando con la NSE, Búsqueda de scripts. Evasión de 
 firewalls.
 
-***Wireshark***:
+***Wireshark:***  
 Métodos de recolección (network taps, Mac floods, Envenenamiento ARP), Filtrado de capturas y operadores 
 de filtrado (&&, ||, ===, !==, <, >), Disección de paquetes, Tráfico ARP, tráfico ICMP, tráfico TCP, tráfico DNS, 
 tráfico HTTP, tráfico HTTPS. Análisis de Exploit PCAP
@@ -57,10 +57,14 @@ Carga de vulnerabilidades (metodología y sobreescritura de archivos existentes)
 Hashing, Términos clave, definición y usos de hash, Reconociendo hashes de contraseña, Craqueo de contraseñas, Hash 
 para comprobar la integridad.
 
-***John The Ripper:*** 
+***John The Ripper:***  
 Wordlists, Rompiendo hashes básicos, Rompiendo hashes de autenticación de Windows, Craqueo de hashes de / etc / shadow,
 Modo single crack, Reglas personalizadas, Descifrado de archivos zip protegidos con contraseña, Descifrado de archivos 
 RAR protegidos con contraseña, Cómo descifrar claves SSH con John.
+
+Cifrado, terminos clave, Criptomatemáticas, Tipos de cifrado (simétrico y asimétrico), RSA (Rivest Shamir Adleman), 
+Establecimiento de claves mediante criptografía asimétrica, Firmas digitales y Certificados, Autenticación SSH, 
+intercambio de claves de Diffie Hellman,  PGP, GPG y AES.
 
 
 ### **_06- Conceptos básicos de explotación de Windows:_** 
