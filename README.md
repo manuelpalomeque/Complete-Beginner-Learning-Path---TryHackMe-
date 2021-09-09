@@ -93,7 +93,10 @@ entorno, Abuso de las características de Shell), Contraseñas y claves (Archivo
 Claves SSH), NFS, Kernel Exploits, Scripts de escalada de privilegios.
 
 
-### **_08- Explotación informática básica:_** 
+### **_08- CTF: Explotación informática básica:_** 
 
+***CTF: Vulnversity***   
+Recopilar informacion con Nmap, Localización de directorios usando GoBuster, Comprometer el servidor web con BurpSuite, 
+Escalada de privilegios.
 
     
