@@ -64,12 +64,21 @@ RAR protegidos con contraseña, Cómo descifrar claves SSH con John.
 
 Cifrado, terminos clave, Criptomatemáticas, Tipos de cifrado (simétrico y asimétrico), RSA (Rivest Shamir Adleman), 
 Establecimiento de claves mediante criptografía asimétrica, Firmas digitales y Certificados, Autenticación SSH, 
-intercambio de claves de Diffie Hellman,  PGP, GPG y AES.
-
+intercambio de claves de Diffie Hellman, PGP, GPG y AES.
 
 ### **_06- Conceptos básicos de explotación de Windows:_** 
+Versiones, Sistema de archivos y permisos de Windows, proceso de autenticación (NTLM, LDAP/LDAPS, KERBEROS), 
+Herramientas de utilidad incorporadas, tipos de servidores, gestión de usuarios y grupos.
+Conceptos básicos de Active Directory, Conceptos básicos de Active Directory, jerarquías de dominio, usuarios y grupos,
+Fideicomisos + Políticas,  Servicios de dominio de Active Directory + autenticación, AD en la nube, challenge.
+
+***Metasploit:***   
+Comandos, modulos, challenge.
+
+***CTF Challeng: BLUE***
 
 ### **_07- Shells y escalada de privilegios:_** 
+
 
 ### **_08- Explotación informática básica:_** 
 
