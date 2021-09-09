@@ -99,4 +99,14 @@ Claves SSH), NFS, Kernel Exploits, Scripts de escalada de privilegios.
 Recopilar informacion con Nmap, Localización de directorios usando GoBuster, Comprometer el servidor web con BurpSuite, 
 Escalada de privilegios.
 
+***CTF: Basic Pentesting*** 
+Pruebas de aplicaciones web y escalada de privilegios, fuerza bruta, enumeración de servicios, Enumeración de Linux, 
+hash cracking.
     
+***CTF: Kenobi***
+Enumerando Samba para acciones (Nmap), Obtener acceso inicial con ProFtpd (FTP, busqueda de exploits), Escalada de 
+privilegios con manipulación de variables de ruta.
+
+***CTF: Steel Mountain***
+Acceso inicial, Nmap, busqueda de exploit, Escalada de privilegios, shell inversa, Acceso y escalada sin Metasploit 
+(powershell y winPEAS).
