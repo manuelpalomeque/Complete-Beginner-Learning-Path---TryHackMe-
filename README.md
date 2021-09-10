@@ -78,6 +78,19 @@ Comandos, modulos, challenge.
 ***CTF Challeng: BLUE***
 
 ### **_07- Shells y escalada de privilegios:_** 
+Definición de Shell, Herramientas, tipos de Shells, Netcat, Estabilización de Shell Netcat, 
+Socat,  shells cifradas de Socat, Cargas utiles comunes de Shell, Msfvenom,  Metasploit multi/handler, WebShells. 
+
+***Challenges: Windows Practice Box y Linux Practice Box.***
+
+Privesc común de Linux, dirección de escalada de privilegios, enumeración, Abuso de archivos SUID / GUID, Explotación 
+de escritura /etc/passwd, Editor de Vi, Explotando Crontab, Explotación de la variable PATH.
+
+Escalada de privilegios, Linux PrivEsc, Challenges, Exploits de Servicio, Permisos de archivo débiles /etc/shadow 
+(legible, escribible), Sudo (secuencias de escape de Shell, variables de entorno), Cron (Permisos de archivo, Variable 
+de entorno Path, comodines), Ejecutables SUID/SGID (Exploits conocidos, Inyección de objetos compartidos, Variables de 
+entorno, Abuso de las características de Shell), Contraseñas y claves (Archivos de historial, archivos de configuración, 
+Claves SSH), NFS, Kernel Exploits, Scripts de escalada de privilegios.
 
 
 ### **_08- Explotación informática básica:_** 
