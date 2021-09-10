@@ -2,6 +2,20 @@
 
 En este repositorio se encuentran practicos y challenges de diferentes tematicas realizadas en el curso.
 
+## A) Temario:
+
+    01- Introducción completa para principiantes
+    02- Fundamentos de Linux
+    03- Conceptos básicos de explotación de red
+    04- Fundamentos de la piratería web
+    05- Criptografía
+    06- Conceptos básicos de explotación de Windows
+    07- Shells y escalada de privilegios
+    08- CTF: Explotación informática básica
+
+
+## B) Descripción:
+
 ### ***01- Introducción completa para principiantes:*** 
 Comenzando en CyberSec. Introducción a la investigación, Búsqueda de vulnerabilidades (ExploitDB, NVD, Inglete CVE), 
 Páginas de manuales.
