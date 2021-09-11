@@ -55,8 +55,7 @@ Si un hash de contraseña comienza con $ 6 $, ¿qué formato tiene (variante de 
 
     EDB-ID:48245
     CVE:2020-10385
-    
-    EDB Verified: 
+
     Author:JINSON VARGHESE BEHANAN
     Type:WEBAPPS
     
@@ -65,7 +64,20 @@ Si un hash de contraseña comienza con $ 6 $, ¿qué formato tiene (variante de 
 
 Se encontró una vulnerabilidad de escalada de privilegios locales en la versión Debian  de Apache Tomcat, en 2016. ¿Cuál es el CVE para esta vulnerabilidad?
 
+    fuente: https://www.exploit-db.com/exploits/40450
+    
     CVE-2016-1240
+    
+    Apache Tomcat 8/7/6 (Debian-Based Distros) - Local Privilege Escalation
+    
+    EDB-ID:40450
+    CVE:2016-1240
+    
+    Author:DAWID GOLUNSKI
+    Type:LOCAL
+    
+    Platform:LINUX
+    Date:2016-10-03
 
 ¿Cuál es el primer CVE encontrado en el reproductor multimedia VLC?
 
