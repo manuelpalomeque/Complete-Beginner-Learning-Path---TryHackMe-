@@ -98,6 +98,19 @@ Se encontró una vulnerabilidad de escalada de privilegios locales en la versió
 
 Si quisiera explotar un desbordamiento de búfer de 2020 en el programa Sudo, ¿qué CVE usaría?
 
+    fuente: https://www.exploit-db.com/exploits/48052
+    
     CVE-2019-18634
+    
+    Sudo 1.8.25p - 'pwfeedback' Buffer Overflow
+    
+    EDB-ID: 48052
+    CVE: 2019-18634
+    
+    Author:DYLAN KATZ
+    Type:LOCAL
+    
+    Platform:LINUX
+    Date:2020-02-06
 
 
