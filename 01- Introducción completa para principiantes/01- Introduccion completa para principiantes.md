@@ -113,4 +113,49 @@ Si quisiera explotar un desbordamiento de búfer de 2020 en el programa Sudo, ¿
     Platform:LINUX
     Date:2020-02-06
 
+3) Páginas de manuales
+
+SCP es una herramienta utilizada para copiar archivos de una computadora a otra.
+¿Qué interruptor usaría para copiar un directorio completo?
+
+    cisco@labvm:~$ man scp
+
+    -r      Recursively copy entire directories.  Note that scp follows sym‐
+             bolic links encountered in the tree traversal.
+
+fdisk es un comando que se utiliza para ver y modificar el esquema de partición utilizado en su disco duro.
+¿Qué interruptor usaría para enumerar las particiones actuales?
+
+    cisco@labvm:~$ man fdisk
+
+    -l, --list
+          List the partition tables for the specified devices and then exit.  If no devices are given, those mentioned
+          in /proc/partitions (if that file exists) are used.
+
+
+nano es un editor de texto fácil de usar para Linux . Podría decirse que hay mejores editores (Vim, siendo la elección obvia); sin embargo, nano es excelente para empezar.
+¿Qué interruptor usarías para hacer una copia de seguridad al abrir un archivo con nano?
+
+    cisco@labvm:~$ man nano
+
+    -B, --backup
+            When saving a file, back up the previous version of it, using the current filename  suffixed  with  a  tilde
+            (~).
+
+Netcat es una herramienta básica utilizada para enviar y recibir manualmente solicitudes de red. 
+¿Qué comando  usaría para iniciar netcat en modo de escucha, usando el puerto 12345?
+
+    cisco@labvm:~$ man nc
+
+    -l      Listen for an incoming connection rather than initiating a connection to a remote host.  The destination and
+             port to listen on can be specified either as non-optional arguments, or with options -s and -p respectively.
+             Cannot be used together with -x or -z.  Additionally, any timeouts specified with the -w option are ignored.
+
+    -p source_port
+             Specify the source port nc should use, subject to privilege restrictions and availability.
+
+    cisco@labvm:~$ nc -l -p 12345
+
+
+
 
