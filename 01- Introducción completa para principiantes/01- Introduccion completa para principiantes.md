@@ -81,7 +81,20 @@ Se encontró una vulnerabilidad de escalada de privilegios locales en la versió
 
 ¿Cuál es el primer CVE encontrado en el reproductor multimedia VLC?
 
+    fuente:  https://www.exploit-db.com/exploits/3069
+    
     CVE-2007-0017
+    
+    VideoLAN VLC Media Player 0.8.6 (PPC) - 'udp://' Format String (PoC)
+    
+    EDB-ID:3069
+    CVE:2007-0017
+    
+    Author:MOAB
+    Type:DOS
+    
+    Platform:OSX
+    Date:2007-01-02
 
 Si quisiera explotar un desbordamiento de búfer de 2020 en el programa Sudo, ¿qué CVE usaría?
 
