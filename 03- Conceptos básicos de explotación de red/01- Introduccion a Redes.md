@@ -104,4 +104,45 @@ La capa de interfaz de red del modelo TCP/IP cubre la funcionalidad de dos capas
 
     ACK
 
+## Herramientas de red: PING
 
+¿Qué comando usaría para hacer ping al sitio web bbc.co.uk?
+
+    cisco@labvm:~$ ping bbc.co.uk
+
+Ping muirlandoracle.co.uk ¿Cuál es la dirección IPv4?
+
+    cisco@labvm:~$ ping muirlandoracle.co.uk
+    PING muirlandoracle.co.uk (217.160.0.152) 56(84) bytes of data.
+    64 bytes from 217-160-0-152.elastic-ssl.ui-r.com (217.160.0.152): icmp_seq=1 ttl=52 time=252 ms
+    64 bytes from 217-160-0-152.elastic-ssl.ui-r.com (217.160.0.152): icmp_seq=2 ttl=52 time=252 ms
+    64 bytes from 217-160-0-152.elastic-ssl.ui-r.com (217.160.0.152): icmp_seq=3 ttl=52 time=254 ms
+    ^C
+    --- muirlandoracle.co.uk ping statistics ---
+    3 packets transmitted, 3 received, 0% packet loss, time 2012ms
+    rtt min/avg/max/mdev = 251.815/252.704/253.995/0.934 m
+        
+    217.160.0.152
+
+¿Qué interruptor le permite cambiar el intervalo de las solicitudes de ping enviadas?
+
+    cisco@labvm:~$ man ping
+
+    -i interval
+           Wait interval seconds between sending each packet. The default is to wait for one
+           second between each packet normally, or not to wait in flood mode. Only super-user
+           may set interval to values less than 0.2 seconds.
+
+¿Qué conmutador le permitiría restringir las solicitudes a IPv4?
+
+    cisco@labvm:~$ man ping
+    
+    -4
+               Use IPv4 only.
+
+¿Qué interruptor le daría una salida más detallada?
+
+    cisco@labvm:~$ man ping
+
+    -v
+           Verbose output.
