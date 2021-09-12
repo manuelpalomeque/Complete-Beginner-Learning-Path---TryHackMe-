@@ -66,5 +66,42 @@ Al enviar datos a través de TCP , ¿cómo llamaría a los datos "del tamaño de
 
     Yes
 
+## El modelo TCP/IP:
+
+¿Qué modelo se introdujo primero, OSI o TCP/IP?
+
+    TCP/IP
+
+¿Qué capa del modelo TCP/IP cubre la funcionalidad de la capa de transporte del modelo OSI (Nombre completo) ?
+
+    Transport
+
+¿Qué capa del modelo TCP/IP cubre la funcionalidad de la capa de sesión del modelo OSI (Nombre completo) ?
+
+    Application
+
+La capa de interfaz de red del modelo TCP/IP cubre la funcionalidad de dos capas en el modelo OSI. Estas capas son Data Link y?.. (Nombre completo) ?
+
+    Physical
+
+¿Qué capa del modelo TCP/IP maneja la funcionalidad de la capa de red OSI?
+
+    Internet
+
+¿Qué tipo de protocolo es TCP?
+
+    Connection-based
+
+¿Qué significa SYN?
+
+    Synchronise
+
+¿Cuál es el segundo paso del apretón de manos de tres vías?
+
+    SYN/ACK
+
+¿Cuál es el nombre abreviado del segmento "Reconocimiento" en el apretón de manos de tres vías?
+
+    ACK
 
 
