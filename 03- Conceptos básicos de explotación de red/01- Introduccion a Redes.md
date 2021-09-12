@@ -146,3 +146,43 @@ Ping muirlandoracle.co.uk ¿Cuál es la dirección IPv4?
 
     -v
            Verbose output.
+
+## Herramientas de red: TRACEROUTE
+
+Usa traceroute en tryhackme.com ¿Puedes ver la ruta que ha tomado tu solicitud?
+
+    Ejemplo con windows:    
+
+    C:\Users\Manu>tracert tryhackme.com
+    
+    Traza a la dirección tryhackme.com [104.22.54.228]
+    sobre un máximo de 30 saltos:
+    
+      1    <1 ms    <1 ms    <1 ms  192.168.0.1
+      2     *        *        *     Tiempo de espera agotado para esta solicitud.
+      3     *        *        *     Tiempo de espera agotado para esta solicitud.
+      4    18 ms    18 ms    18 ms  host192.181-89-3.telecom.net.ar [181.89.3.192]
+      5     *        *        *     Tiempo de espera agotado para esta solicitud.
+      6     *        *        *     Tiempo de espera agotado para esta solicitud.
+      7    27 ms    20 ms    24 ms  ae13.baires3.bai.seabone.net [195.22.220.56]
+      8    18 ms    18 ms    23 ms  ae8.baires5.bai.seabone.net [195.22.220.119]
+      9    26 ms    20 ms    20 ms  cloudflare.baires5.bai.seabone.net [185.70.203.71]
+     10    20 ms    19 ms    19 ms  104.22.54.228
+    
+    Traza completa.
+
+
+¿Qué interruptor usaría para especificar una interfaz al usar Traceroute?
+
+    -i
+
+¿Qué interruptor usaría si quisiera usar solicitudes TCP SYN al rastrear la ruta?
+
+    -T
+
+[Pensamiento lateral]  ¿En qué capa del modelo TCP/IP se ejecutará traceroute de forma predeterminada (Windows)?
+
+    Internet
+
+
+
