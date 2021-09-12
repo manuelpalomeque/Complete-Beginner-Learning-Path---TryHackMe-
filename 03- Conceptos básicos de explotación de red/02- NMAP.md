@@ -115,3 +115,24 @@ Una opción muy útil que no debe ser ignorada:
     
     --script=vuln
 
+## Tipos de escaneo: Exploraciones de conexión TCP (-sT):
+
+¿Qué RFC define el comportamiento apropiado para el protocolo TCP ?
+
+    RFC 793
+
+Si un puerto está cerrado, ¿qué indicador debe devolver el servidor para indicarlo?
+
+    RST
+
+## Tipos de escaneo: Escaneos SYN (-sS):
+
+Hay otros dos nombres para un escaneo SYN, ¿cuáles son?
+
+    Half-Open, Stealth
+
+¿Puede Nmap usar un escaneo SYN sin permisos de Sudo (Y/N)?
+
+    N
+
+
