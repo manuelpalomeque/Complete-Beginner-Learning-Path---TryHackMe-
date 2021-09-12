@@ -526,3 +526,51 @@ Realice una búsqueda whois en microsoft.com
 
     Tech Email: msnhst@microsoft.com
 
+## Herramientas de red: DIG
+
+¿Qué significa DNS ?
+
+    Domain Name System
+
+¿Cuál es el primer tipo de servidor DNS que su computadora consultaría cuando busca un dominio?
+
+    Recursive
+
+¿Qué tipo de servidor DNS contiene registros específicos de extensiones de dominio (es decir , .com, .co.uk*, etc.)*? Utilice la versión larga del nombre.
+
+    Top-Level Domain
+
+¿Cuál es el primer lugar donde buscaría su computadora para encontrar la dirección IP de un dominio?
+
+    Local Cache
+
+[Investigación]  Google ejecuta dos servidores DNS públicos. Uno de ellos se puede consultar con la IP 8.8.8.8, 
+¿cuál es la dirección IP del otro?
+
+    8.8.4.4
+
+    cisco@labvm:~$ dig google.com @8.8.4.4
+    
+    ; <<>> DiG 9.16.1-Ubuntu <<>> google.com @8.8.4.4
+    ;; global options: +cmd
+    ;; Got answer:
+    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17325
+    ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+    
+    ;; OPT PSEUDOSECTION:
+    ; EDNS: version: 0, flags:; udp: 512
+    ;; QUESTION SECTION:
+    ;google.com.			IN	A
+    
+    ;; ANSWER SECTION:
+    google.com.		251	IN	A	142.250.79.142
+    
+    ;; Query time: 20 msec
+    ;; SERVER: 8.8.4.4#53(8.8.4.4)
+    ;; WHEN: Sat Feb 12 19:40:05 UTC 2022
+    ;; MSG SIZE  rcvd: 55
+
+
+Si una consulta de DNS tiene un TTL de 24 horas, ¿qué número mostraría la consulta de excavación?
+
+    86400
