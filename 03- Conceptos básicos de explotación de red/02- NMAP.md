@@ -133,6 +133,31 @@ Hay otros dos nombres para un escaneo SYN, ¿cuáles son?
 
 ¿Puede Nmap usar un escaneo SYN sin permisos de Sudo (Y/N)?
 
-    N
+    No
+
+## Tipos de escaneo: Escaneos UDP (-sU)
+
+Si un puerto UDP no responde a un escaneo de Nmap, ¿cómo se marcará?
+
+    open|filtered
+
+Cuando se cierra un puerto UDP , por convención, el objetivo debe devolver un mensaje de "puerto inalcanzable". ¿Qué protocolo usaría para hacerlo?
+
+    ICMP
+
+## Tipos de escaneo: NULL (-sN), FIN (-sF) y Xmas (-sX):
+
+¿Cuál de los tres tipos de exploración mostrados utiliza el indicador URG?
+
+    xmas
+
+¿Por qué se utilizan generalmente los escaneos NULL, FIN y Xmas?
+
+    Firewall Evasion
+
+¿Qué sistema operativo común puede responder a un escaneo NULL, FIN o Xmas con un RST para cada puerto?
+
+    Microsoft Windows
+
 
 
