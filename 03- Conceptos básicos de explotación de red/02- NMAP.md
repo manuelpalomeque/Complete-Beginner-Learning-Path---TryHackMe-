@@ -159,5 +159,27 @@ Cuando se cierra un puerto UDP , por convención, el objetivo debe devolver un m
 
     Microsoft Windows
 
+## Tipos de escaneo: Exploración de red ICMP (-sn)
 
+
+¿Cómo realizaría un barrido de ping en la red 172.16.xx (máscara de red: 255.255.0.0) usando Nmap? (notación CIDR)
+
+    cisco@labvm:~$ nmap -sn 172.16.0.0/16
+
+## NSE Scripts
+
+¿En qué idioma están escritos los scripts NSE?
+
+    Lua
+
+¿Qué categoría de secuencias de comandos sería una muy mala idea para ejecutar en un entorno de producción?
+
+    intrusive
+
+## NSE Scripts: Trabajando con la NSE
+
+¿Qué argumento opcional puede ftp-anon.nsetomar el script?
+
+    maxlist
+    fuente: https://nmap.org/nsedoc/scripts/ftp-anon.html
 
