@@ -183,3 +183,62 @@ Cuando se cierra un puerto UDP , por convención, el objetivo debe devolver un m
     maxlist
     fuente: https://nmap.org/nsedoc/scripts/ftp-anon.html
 
+## NSE Scripts: Búsqueda de Scripts
+
+Busque secuencias de comandos "smb" en el /usr/share/nmap/scripts/directorio utilizando cualquiera de los métodos 
+demostrados. ¿Cuál es el nombre de archivo del script que determina el sistema operativo subyacente del servidor SMB?
+
+    cisco@labvm:/usr/share/nmap/scripts$ ls -l /usr/share/nmap/scripts/*smb*
+    -rw-r--r-- 1 root root  3355 Mar 23  2020 /usr/share/nmap/scripts/smb2-capabilities.nse
+    -rw-r--r-- 1 root root  3075 Mar 23  2020 /usr/share/nmap/scripts/smb2-security-mode.nse
+    -rw-r--r-- 1 root root  1447 Mar 23  2020 /usr/share/nmap/scripts/smb2-time.nse
+    -rw-r--r-- 1 root root  5238 Mar 23  2020 /usr/share/nmap/scripts/smb2-vuln-uptime.nse
+    -rw-r--r-- 1 root root 45138 Mar 23  2020 /usr/share/nmap/scripts/smb-brute.nse
+    -rw-r--r-- 1 root root  5289 Mar 23  2020 /usr/share/nmap/scripts/smb-double-pulsar-backdoor.nse
+    -rw-r--r-- 1 root root  4840 Mar 23  2020 /usr/share/nmap/scripts/smb-enum-domains.nse
+    -rw-r--r-- 1 root root  5971 Mar 23  2020 /usr/share/nmap/scripts/smb-enum-groups.nse
+    -rw-r--r-- 1 root root  8043 Mar 23  2020 /usr/share/nmap/scripts/smb-enum-processes.nse
+    -rw-r--r-- 1 root root 27274 Mar 23  2020 /usr/share/nmap/scripts/smb-enum-services.nse
+    -rw-r--r-- 1 root root 12097 Mar 23  2020 /usr/share/nmap/scripts/smb-enum-sessions.nse
+    -rw-r--r-- 1 root root  6923 Mar 23  2020 /usr/share/nmap/scripts/smb-enum-shares.nse
+    -rw-r--r-- 1 root root 12527 Mar 23  2020 /usr/share/nmap/scripts/smb-enum-users.nse
+    -rw-r--r-- 1 root root  1706 Mar 23  2020 /usr/share/nmap/scripts/smb-flood.nse
+    -rw-r--r-- 1 root root  7393 Mar 23  2020 /usr/share/nmap/scripts/smb-ls.nse
+    -rw-r--r-- 1 root root  8758 Mar 23  2020 /usr/share/nmap/scripts/smb-mbenum.nse
+    -rw-r--r-- 1 root root  8220 Mar 23  2020 /usr/share/nmap/scripts/smb-os-discovery.nse
+    -rw-r--r-- 1 root root  4982 Mar 23  2020 /usr/share/nmap/scripts/smb-print-text.nse
+    -rw-r--r-- 1 root root  1898 Mar 23  2020 /usr/share/nmap/scripts/smb-protocols.nse
+    -rw-r--r-- 1 root root 63596 Mar 23  2020 /usr/share/nmap/scripts/smb-psexec.nse
+    -rw-r--r-- 1 root root  5190 Mar 23  2020 /usr/share/nmap/scripts/smb-security-mode.nse
+    -rw-r--r-- 1 root root  2424 Mar 23  2020 /usr/share/nmap/scripts/smb-server-stats.nse
+    -rw-r--r-- 1 root root 14159 Mar 23  2020 /usr/share/nmap/scripts/smb-system-info.nse
+    -rw-r--r-- 1 root root  7524 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-conficker.nse
+    -rw-r--r-- 1 root root  6402 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-cve2009-3103.nse
+    -rw-r--r-- 1 root root 23154 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-cve-2017-7494.nse
+    -rw-r--r-- 1 root root  6545 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-ms06-025.nse
+    -rw-r--r-- 1 root root  5386 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-ms07-029.nse
+    -rw-r--r-- 1 root root  5688 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-ms08-067.nse
+    -rw-r--r-- 1 root root  5647 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-ms10-054.nse
+    -rw-r--r-- 1 root root  7214 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-ms10-061.nse
+    -rw-r--r-- 1 root root  7344 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-ms17-010.nse
+    -rw-r--r-- 1 root root  4400 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-regsvc-dos.nse
+    -rw-r--r-- 1 root root  6586 Mar 23  2020 /usr/share/nmap/scripts/smb-vuln-webexec.nse
+    -rw-r--r-- 1 root root  5105 Mar 23  2020 /usr/share/nmap/scripts/smb-webexec-exploit.nse
+      
+    /usr/share/nmap/scripts/smb-os-discovery.nse 
+    smb-os-discovery.nse
+
+Lea este script. ¿De qué depende?
+
+    smb-brute
+
+## Evasión de Firewalls
+¿Qué protocolo simple (y en el que se confía con frecuencia) se bloquea a menudo y requiere el uso del -Pnconmutador?
+
+    ICMP
+
+[Investigación] ¿Qué conmutador Nmap le permite agregar una longitud arbitraria de datos aleatorios al final de los paquetes?
+
+    --data-length
+
+    fuente: https://nmap.org/book/man-bypass-firewalls-ids.html
