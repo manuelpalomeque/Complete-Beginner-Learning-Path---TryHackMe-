@@ -242,3 +242,72 @@ Lea este script. ¿De qué depende?
     --data-length
 
     fuente: https://nmap.org/book/man-bypass-firewalls-ids.html
+
+## Challenge:
+
+¿El objetivo ( 10.10.167.149) responde a las solicitudes ICMP (ping) (S/N)?
+
+    root@ip-10-10-78-68:~# ping -c 4  10.10.167.149
+    PING 10.10.167.149 (10.10.167.149) 56(84) bytes of data.
+    
+    --- 10.10.167.149 ping statistics ---
+    4 packets transmitted, 0 received, 100% packet loss, time 3056ms
+
+    No
+
+Realice un escaneo Xmas en los primeros 999 puertos del objetivo: ¿cuántos puertos se muestran abiertos o filtrados?
+
+    root@ip-10-10-78-68:~# nmap -sX -p999 10.10.167.149
+    
+    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:05 GMT
+    Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
+    Host is up (0.00017s latency).
+    
+    PORT    STATE         SERVICE
+    999/tcp open|filtered garcon
+    MAC Address: 02:5A:73:AF:01:E5 (Unknown)
+    
+    Nmap done: 1 IP address (1 host up) scanned in 0.57 seconds    
+    
+    999
+
+Hay una razón dada para esto, ¿cuál es?
+Nota: La respuesta estará en los resultados de su escaneo. Piense detenidamente qué interruptores usar y lea la 
+sugerencia antes de pedir ayuda. ---> USAR EL COMANDO  -VV
+
+    root@ip-10-10-78-68:~# nmap -sX -p999 -vv 10.10.167.149
+
+    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:06 GMT
+    Initiating ARP Ping Scan at 16:06
+    Scanning 10.10.167.149 [1 port]
+    Completed ARP Ping Scan at 16:06, 0.22s elapsed (1 total hosts)
+    Initiating Parallel DNS resolution of 1 host. at 16:06
+    Completed Parallel DNS resolution of 1 host. at 16:06, 0.00s elapsed
+    Initiating XMAS Scan at 16:06
+    Scanning ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) [1 port]
+    Completed XMAS Scan at 16:06, 0.24s elapsed (1 total ports)
+    Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
+    Host is up, received arp-response (0.00015s latency).
+    Scanned at 2022-02-13 16:06:30 GMT for 1s
+    
+    PORT    STATE         SERVICE REASON
+    999/tcp open|filtered garcon  no-response
+    MAC Address: 02:5A:73:AF:01:E5 (Unknown)
+    
+    Read data files from: /usr/bin/../share/nmap
+    Nmap done: 1 IP address (1 host up) scanned in 0.58 seconds
+               Raw packets sent: 3 (108B) | Rcvd: 1 (28B)    
+    
+    No Response
+
+Realice un escaneo TCP SYN en los primeros 5000 puertos del objetivo: ¿cuántos puertos se muestran abiertos?
+
+    5
+
+Abra Wireshark (consulte Wireshark Room de Cryillic para obtener instrucciones) y realice un escaneo de conexión TCP contra el puerto 80 en el objetivo, monitoreando los resultados. Asegúrate de entender lo que está pasando.
+
+    No se necesita respuesta
+
+Despliegue el ftp-anonscript contra la caja. ¿Puede Nmap iniciar sesión con éxito en el servidor FTP en el puerto 21? (S/N)
+
+    Y
