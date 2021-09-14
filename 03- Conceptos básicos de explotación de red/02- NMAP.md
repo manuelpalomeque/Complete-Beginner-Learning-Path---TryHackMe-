@@ -347,8 +347,86 @@ Realice un escaneo TCP SYN en los primeros 5000 puertos del objetivo: ¿cuántos
 
 Abra Wireshark (consulte Wireshark Room de Cryillic para obtener instrucciones) y realice un escaneo de conexión TCP contra el puerto 80 en el objetivo, monitoreando los resultados. Asegúrate de entender lo que está pasando.
 
-    No se necesita respuesta
+    root@ip-10-10-78-68:~# nmap -sT -p 0-80 -vv 10.10.167.149
+    
+    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:42 GMT
+    Initiating ARP Ping Scan at 16:42
+    Scanning 10.10.167.149 [1 port]
+    Completed ARP Ping Scan at 16:42, 0.22s elapsed (1 total hosts)
+    Initiating Parallel DNS resolution of 1 host. at 16:42
+    Completed Parallel DNS resolution of 1 host. at 16:42, 0.01s elapsed
+    Initiating Connect Scan at 16:42
+    Scanning ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) [81 ports]
+    Discovered open port 53/tcp on 10.10.167.149
+    Discovered open port 80/tcp on 10.10.167.149
+    Discovered open port 21/tcp on 10.10.167.149
+    Completed Connect Scan at 16:42, 1.70s elapsed (81 total ports)
+    Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
+    Host is up, received arp-response (0.0016s latency).
+    Scanned at 2022-02-13 16:42:32 GMT for 2s
+    Not shown: 78 filtered ports
+    Reason: 78 no-responses
+    PORT   STATE SERVICE REASON
+    21/tcp open  ftp     syn-ack
+    53/tcp open  domain  syn-ack
+    80/tcp open  http    syn-ack
+    MAC Address: 02:5A:73:AF:01:E5 (Unknown)
+    
+    Read data files from: /usr/bin/../share/nmap
+    Nmap done: 1 IP address (1 host up) scanned in 2.02 seconds
+               Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+    root@ip-10-10-78-68:~# 
+
 
 Despliegue el ftp-anonscript contra la caja. ¿Puede Nmap iniciar sesión con éxito en el servidor FTP en el puerto 21? (S/N)
+
+
+    root@ip-10-10-78-68:~# nmap --script=ftp-anon 10.10.167.149 -vv
+    
+    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:45 GMT
+    NSE: Loaded 1 scripts for scanning.
+    NSE: Script Pre-scanning.
+    NSE: Starting runlevel 1 (of 1) scan.
+    Initiating NSE at 16:45
+    Completed NSE at 16:45, 0.00s elapsed
+    Initiating ARP Ping Scan at 16:45
+    Scanning 10.10.167.149 [1 port]
+    Completed ARP Ping Scan at 16:45, 0.23s elapsed (1 total hosts)
+    Initiating Parallel DNS resolution of 1 host. at 16:45
+    Completed Parallel DNS resolution of 1 host. at 16:45, 0.00s elapsed
+    Initiating SYN Stealth Scan at 16:45
+    Scanning ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) [1000 ports]
+    Discovered open port 21/tcp on 10.10.167.149
+    Discovered open port 135/tcp on 10.10.167.149
+    Discovered open port 53/tcp on 10.10.167.149
+    Discovered open port 3389/tcp on 10.10.167.149
+    Discovered open port 80/tcp on 10.10.167.149
+    Completed SYN Stealth Scan at 16:46, 17.27s elapsed (1000 total ports)
+    NSE: Script scanning 10.10.167.149.
+    NSE: Starting runlevel 1 (of 1) scan.
+    Initiating NSE at 16:46
+    Completed NSE at 16:46, 30.00s elapsed
+    Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
+    Host is up, received arp-response (0.0018s latency).
+    Scanned at 2022-02-13 16:45:55 GMT for 48s
+    Not shown: 995 filtered ports
+    Reason: 995 no-responses
+    PORT     STATE SERVICE       REASON
+    21/tcp   open  ftp           syn-ack ttl 128
+    | ftp-anon: Anonymous FTP login allowed (FTP code 230)
+    |_Can't get directory listing: TIMEOUT
+    53/tcp   open  domain        syn-ack ttl 128
+    80/tcp   open  http          syn-ack ttl 128
+    135/tcp  open  msrpc         syn-ack ttl 128
+    3389/tcp open  ms-wbt-server syn-ack ttl 128
+    MAC Address: 02:5A:73:AF:01:E5 (Unknown)
+    
+    NSE: Script Post-scanning.
+    NSE: Starting runlevel 1 (of 1) scan.
+    Initiating NSE at 16:46
+    Completed NSE at 16:46, 0.00s elapsed
+    Read data files from: /usr/bin/../share/nmap
+    Nmap done: 1 IP address (1 host up) scanned in 48.12 seconds
+               Raw packets sent: 3005 (132.204KB) | Rcvd: 20 (864B)
 
     Y
