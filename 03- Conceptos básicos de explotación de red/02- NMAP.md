@@ -257,17 +257,15 @@ Lea este script. ¿De qué depende?
 
 Realice un escaneo Xmas en los primeros 999 puertos del objetivo: ¿cuántos puertos se muestran abiertos o filtrados?
 
-    root@ip-10-10-78-68:~# nmap -sX -p999 10.10.167.149
-    
-    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:05 GMT
+    root@ip-10-10-78-68:~# nmap -sX -p 1-999  10.10.167.149
+
+    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:34 GMT
     Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
-    Host is up (0.00017s latency).
-    
-    PORT    STATE         SERVICE
-    999/tcp open|filtered garcon
+    Host is up (0.00015s latency).
+    All 999 scanned ports on ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) are open|filtered
     MAC Address: 02:5A:73:AF:01:E5 (Unknown)
     
-    Nmap done: 1 IP address (1 host up) scanned in 0.57 seconds    
+    Nmap done: 1 IP address (1 host up) scanned in 21.42 seconds  
     
     999
 
@@ -275,33 +273,76 @@ Hay una razón dada para esto, ¿cuál es?
 Nota: La respuesta estará en los resultados de su escaneo. Piense detenidamente qué interruptores usar y lea la 
 sugerencia antes de pedir ayuda. ---> USAR EL COMANDO  -VV
 
-    root@ip-10-10-78-68:~# nmap -sX -p999 -vv 10.10.167.149
-
-    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:06 GMT
-    Initiating ARP Ping Scan at 16:06
-    Scanning 10.10.167.149 [1 port]
-    Completed ARP Ping Scan at 16:06, 0.22s elapsed (1 total hosts)
-    Initiating Parallel DNS resolution of 1 host. at 16:06
-    Completed Parallel DNS resolution of 1 host. at 16:06, 0.00s elapsed
-    Initiating XMAS Scan at 16:06
-    Scanning ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) [1 port]
-    Completed XMAS Scan at 16:06, 0.24s elapsed (1 total ports)
-    Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
-    Host is up, received arp-response (0.00015s latency).
-    Scanned at 2022-02-13 16:06:30 GMT for 1s
+    root@ip-10-10-78-68:~# nmap -sX -p 1-999 -vv 10.10.167.149
     
-    PORT    STATE         SERVICE REASON
-    999/tcp open|filtered garcon  no-response
+    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:26 GMT
+    Initiating ARP Ping Scan at 16:26
+    Scanning 10.10.167.149 [1 port]
+    Completed ARP Ping Scan at 16:26, 0.22s elapsed (1 total hosts)
+    Initiating Parallel DNS resolution of 1 host. at 16:26
+    Completed Parallel DNS resolution of 1 host. at 16:26, 0.00s elapsed
+    Initiating XMAS Scan at 16:26
+    Scanning ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) [999 ports]
+    Completed XMAS Scan at 16:26, 21.08s elapsed (999 total ports)
+    Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
+    Host is up, received arp-response (0.00013s latency).
+    All 999 scanned ports on ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) are open|filtered because of 999 no-responses
     MAC Address: 02:5A:73:AF:01:E5 (Unknown)
     
     Read data files from: /usr/bin/../share/nmap
-    Nmap done: 1 IP address (1 host up) scanned in 0.58 seconds
-               Raw packets sent: 3 (108B) | Rcvd: 1 (28B)    
+    Nmap done: 1 IP address (1 host up) scanned in 21.43 seconds
+               Raw packets sent: 1999 (79.948KB) | Rcvd: 1 (28B)
+      
     
     No Response
 
 Realice un escaneo TCP SYN en los primeros 5000 puertos del objetivo: ¿cuántos puertos se muestran abiertos?
 
+    root@ip-10-10-78-68:~# nmap -sS -p 0-5000 -vv 10.10.167.149
+    
+    Starting Nmap 7.60 ( https://nmap.org ) at 2022-02-13 16:15 GMT
+    Initiating ARP Ping Scan at 16:15
+    Scanning 10.10.167.149 [1 port]
+    Completed ARP Ping Scan at 16:15, 0.22s elapsed (1 total hosts)
+    Initiating Parallel DNS resolution of 1 host. at 16:15
+    Completed Parallel DNS resolution of 1 host. at 16:15, 0.00s elapsed
+    Initiating SYN Stealth Scan at 16:15
+    Scanning ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149) [5001 ports]
+    Discovered open port 3389/tcp on 10.10.167.149
+    Discovered open port 53/tcp on 10.10.167.149
+    Discovered open port 21/tcp on 10.10.167.149
+    Discovered open port 135/tcp on 10.10.167.149
+    Discovered open port 80/tcp on 10.10.167.149
+    Increasing send delay for 10.10.167.149 from 0 to 5 due to 11 out of 28 dropped probes since last increase.
+    SYN Stealth Scan Timing: About 33.21% done; ETC: 16:17 (0:01:02 remaining)
+    Increasing send delay for 10.10.167.149 from 5 to 10 due to 11 out of 29 dropped probes since last increase.
+    Increasing send delay for 10.10.167.149 from 10 to 20 due to 11 out of 34 dropped probes since last increase.
+    SYN Stealth Scan Timing: About 60.52% done; ETC: 16:18 (0:01:01 remaining)
+    Increasing send delay for 10.10.167.149 from 20 to 40 due to 11 out of 34 dropped probes since last increase.
+    Increasing send delay for 10.10.167.149 from 40 to 80 due to 11 out of 32 dropped probes since last increase.
+    SYN Stealth Scan Timing: About 68.24% done; ETC: 16:19 (0:01:13 remaining)
+    SYN Stealth Scan Timing: About 74.07% done; ETC: 16:21 (0:01:21 remaining)
+    SYN Stealth Scan Timing: About 80.34% done; ETC: 16:22 (0:01:17 remaining)
+    SYN Stealth Scan Timing: About 86.40% done; ETC: 16:23 (0:01:02 remaining)
+    SYN Stealth Scan Timing: About 91.28% done; ETC: 16:24 (0:00:43 remaining)
+    Completed SYN Stealth Scan at 16:25, 565.93s elapsed (5001 total ports)
+    Nmap scan report for ip-10-10-167-149.eu-west-1.compute.internal (10.10.167.149)
+    Host is up, received arp-response (0.0017s latency).
+    Scanned at 2022-02-13 16:15:57 GMT for 566s
+    Not shown: 4996 filtered ports
+    Reason: 4996 no-responses
+    PORT     STATE SERVICE       REASON
+    21/tcp   open  ftp           syn-ack ttl 128
+    53/tcp   open  domain        syn-ack ttl 128
+    80/tcp   open  http          syn-ack ttl 128
+    135/tcp  open  msrpc         syn-ack ttl 128
+    3389/tcp open  ms-wbt-server syn-ack ttl 128
+    MAC Address: 02:5A:73:AF:01:E5 (Unknown)
+    
+    Read data files from: /usr/bin/../share/nmap
+    Nmap done: 1 IP address (1 host up) scanned in 566.29 seconds
+               Raw packets sent: 15436 (679.168KB) | Rcvd: 448 (19.696KB)    
+    
     5
 
 Abra Wireshark (consulte Wireshark Room de Cryillic para obtener instrucciones) y realice un escaneo de conexión TCP contra el puerto 80 en el objetivo, monitoreando los resultados. Asegúrate de entender lo que está pasando.
