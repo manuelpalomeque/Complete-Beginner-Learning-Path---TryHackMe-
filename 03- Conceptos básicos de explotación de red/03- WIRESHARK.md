@@ -39,3 +39,17 @@ Seleccionar el campo, hacer click derecho> copiar > valor
  
     08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637
 
+## Tráfico DNS
+
+¿Qué se consulta en el paquete 1?
+ 
+    8.8.8.8.in-addr.arpa
+
+¿Qué sitio se consulta en el paquete 26?
+ 
+    www.wireshark.org
+
+¿Cuál es el ID de transacción para el paquete 26?
+
+    0x2c58
+
