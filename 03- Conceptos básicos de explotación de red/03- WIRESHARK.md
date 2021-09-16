@@ -53,3 +53,28 @@ Seleccionar el campo, hacer click derecho> copiar > valor
 
     0x2c58
 
+## Tráfico HTTP  
+
+¿Qué porcentaje de paquetes se originan en el sistema de nombres de dominio?
+ 
+    4.7
+
+¿Qué punto final termina en .237?
+ 
+    145.254.160.237
+
+¿Cuál es el agente de usuario listado en el paquete 4?
+ 
+    Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6) Gecko/20040113
+
+Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 18?
+ 
+    http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-2309191948673629&random=1084443430285&lmt=1082467020&format=468x60_as&output=html&url=http%3A%2F%2Fwww.ethereal.com%2Fdownload.html&color_bg=FFFFFF&color_text=333333&color_link=000000&color_url=666633&color_border=666633
+
+¿Qué nombre de dominio se solicitó del paquete 38?
+ 
+    www.ethereal.com
+
+Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 38?
+
+    http://www.ethereal.com/download.html
