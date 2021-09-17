@@ -78,3 +78,18 @@ Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 1
 Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 38?
 
     http://www.ethereal.com/download.html
+
+## Tráfico HTTPS 
+
+Mirando el flujo de datos, ¿cuál es el URI de solicitud completo para el paquete 31?
+ 
+    https://localhost/icons/apache_pb.png
+
+Mirando el flujo de datos, ¿cuál es el URI de solicitud completo para el paquete 50?
+ 
+    https://localhost/icons/back.gif
+
+¿Cuál es el User-Agent listado en el paquete 50?
+ 
+    Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+
