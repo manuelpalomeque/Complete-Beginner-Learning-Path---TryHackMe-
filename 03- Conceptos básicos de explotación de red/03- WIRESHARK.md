@@ -163,14 +163,60 @@ intente un día más o menos.
 ## Tráfico DNS
 
 ¿Qué se consulta en el paquete 1?
- 
+
+    Frame 1: 80 bytes on wire (640 bits), 80 bytes captured (640 bits) on interface en1, id 0
+    Ethernet II, Src: Apple_13:c5:58 (60:33:4b:13:c5:58), Dst: MS-NLB-PhysServer-26_11:f0:c8:3b (02:1a:11:f0:c8:3b)
+    Internet Protocol Version 4, Src: 192.168.43.9, Dst: 192.168.43.1
+    User Datagram Protocol, Src Port: 51677, Dst Port: 53
+    Domain Name System (query)
+        Transaction ID: 0x528e
+        Flags: 0x0100 Standard query
+        Questions: 1
+        Answer RRs: 0
+        Authority RRs: 0
+        Additional RRs: 0
+        Queries
+            8.8.8.8.in-addr.arpa: type PTR, class IN
+
+
     8.8.8.8.in-addr.arpa
 
 ¿Qué sitio se consulta en el paquete 26?
- 
+
+    Frame 26: 77 bytes on wire (616 bits), 77 bytes captured (616 bits) on interface en1, id 0
+    Ethernet II, Src: Apple_13:c5:58 (60:33:4b:13:c5:58), Dst: MS-NLB-PhysServer-26_11:f0:c8:3b (02:1a:11:f0:c8:3b)
+    Internet Protocol Version 4, Src: 192.168.43.9, Dst: 192.168.43.1
+    User Datagram Protocol, Src Port: 54627, Dst Port: 53
+    Domain Name System (query)
+        Transaction ID: 0x2c58
+        Flags: 0x0100 Standard query
+        Questions: 1
+        Answer RRs: 0
+        Authority RRs: 0
+        Additional RRs: 0
+        Queries
+            www.wireshark.org: type A, class IN
+        [Response In: 27]
+
+
     www.wireshark.org
 
 ¿Cuál es el ID de transacción para el paquete 26?
+
+    Frame 26: 77 bytes on wire (616 bits), 77 bytes captured (616 bits) on interface en1, id 0
+    Ethernet II, Src: Apple_13:c5:58 (60:33:4b:13:c5:58), Dst: MS-NLB-PhysServer-26_11:f0:c8:3b (02:1a:11:f0:c8:3b)
+    Internet Protocol Version 4, Src: 192.168.43.9, Dst: 192.168.43.1
+    User Datagram Protocol, Src Port: 54627, Dst Port: 53
+    Domain Name System (query)
+        Transaction ID: 0x2c58
+        Flags: 0x0100 Standard query
+        Questions: 1
+        Answer RRs: 0
+        Authority RRs: 0
+        Additional RRs: 0
+        Queries
+        [Response In: 27]
+
 
     0x2c58
 
