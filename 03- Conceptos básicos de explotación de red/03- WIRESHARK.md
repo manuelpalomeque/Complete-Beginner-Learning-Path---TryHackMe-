@@ -2,20 +2,66 @@
 
 ¿Qué es el código de operación para el paquete 6?
  
-    Wireshark 101
+    Frame 6: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+    Ethernet II, Src: HuaweiTe_f0:45:d7 (80:fb:06:f0:45:d7), Dst: Sfr_e3:c3:31 (30:7e:cb:e3:c3:31)
+    Address Resolution Protocol (request)
+        Hardware type: Ethernet (1)
+        Protocol type: IPv4 (0x0800)
+        Hardware size: 6
+        Protocol size: 4
+        Opcode: request (1)
+        Sender MAC address: HuaweiTe_f0:45:d7 (80:fb:06:f0:45:d7)
+        Sender IP address: 10.251.196.1
+        Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Target IP address: 10.251.196.227
+
+    request (1)
 
 ¿Cuál es la dirección MAC de origen del paquete 19?
  
-     80:fb:06:f0:45:d7
+    Frame 19: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+    Ethernet II, Src: HuaweiTe_f0:45:d7 (80:fb:06:f0:45:d7), Dst: Sfr_88:e7:a1 (30:7e:cb:88:e7:a1)
+    Address Resolution Protocol (request)
+        Hardware type: Ethernet (1)
+        Protocol type: IPv4 (0x0800)
+        Hardware size: 6
+        Protocol size: 4
+        Opcode: request (1)
+        Sender MAC address: HuaweiTe_f0:45:d7 (80:fb:06:f0:45:d7)
+        Sender IP address: 10.251.196.1
+        Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Target IP address: 10.251.196.74
+     
+
+    80:fb:06:f0:45:d7
 
 ¿Qué 4 paquetes son paquetes de respuesta?
 Se que son respuestas ya que, en la parte de info, no figura la palabra WHO
  
+    filtro: arp.opcode == 2
+    
+    76	61.879614	HuaweiTe_f0:45:d7	Sfr_18:c2:72	ARP	60	10.251.23.1 is at 80:fb:06:f0:45:d7
+    400	1388651131.688461	HuaweiTe_f0:45:d7	Sfr_18:c2:72	ARP	60	10.251.23.1 is at 80:fb:06:f0:45:d7
+    459	1388651198.798484	HuaweiTe_f0:45:d7	Sfr_18:c2:72	ARP	60	10.251.23.1 is at 80:fb:06:f0:45:d7
+    520	1388651266.920150	HuaweiTe_f0:45:d7	Sfr_18:c2:72	ARP	60	10.251.23.1 is at 80:fb:06:f0:45:d7
+
     76,400,459,520
 
-¿Qué dirección IP está en 80: fb: 06: f0: 45: d7?
-Para filtrar, use el siguiente comando:
-arp contains 80:fb:06:f0:45:d7
+¿Qué dirección IP está en 80:fb:06:f0:45:d7? Para filtrar, use el siguiente comando: arp contains 80:fb:06:f0:45:d7
+
+    Frame 520: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+    Ethernet II, Src: HuaweiTe_f0:45:d7 (80:fb:06:f0:45:d7), Dst: Sfr_18:c2:72 (e0:a1:d7:18:c2:72)
+    Address Resolution Protocol (reply)
+        Hardware type: Ethernet (1)
+        Protocol type: IPv4 (0x0800)
+        Hardware size: 6
+        Protocol size: 4
+        Opcode: reply (2)
+        Sender MAC address: HuaweiTe_f0:45:d7 (80:fb:06:f0:45:d7)
+        Sender IP address: 10.251.23.1
+        Target MAC address: Sfr_18:c2:72 (e0:a1:d7:18:c2:72)
+        Target IP address: 10.251.23.139
+    
 
     10.251.23.1
 
