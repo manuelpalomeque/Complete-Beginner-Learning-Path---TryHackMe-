@@ -69,20 +69,95 @@ Se que son respuestas ya que, en la parte de info, no figura la palabra WHO
 
 ¿Cuál es el tipo de paquete 4?
  
+    Frame 4: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface en1, id 0
+    Ethernet II, Src: Apple_13:c5:58 (60:33:4b:13:c5:58), Dst: MS-NLB-PhysServer-26_11:f0:c8:3b (02:1a:11:f0:c8:3b)
+    Internet Protocol Version 4, Src: 192.168.43.9, Dst: 8.8.8.8
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xbbb3 [correct]
+        [Checksum Status: Good]
+        Identifier (BE): 55099 (0xd73b)
+        Identifier (LE): 15319 (0x3bd7)
+        Sequence Number (BE): 0 (0x0000)
+        Sequence Number (LE): 0 (0x0000)
+        [Response frame: 5]
+        Timestamp from icmp data: May 30, 2013 19:45:17.283108000 Hora estándar de Argentina
+        [Timestamp from icmp data (relative): 0.000079000 seconds]
+        Data (48 bytes)
+
+
     8
 
 ¿Cuál es el tipo de paquete 5?
  
+    Frame 5: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface en1, id 0
+    Ethernet II, Src: MS-NLB-PhysServer-26_11:f0:c8:3b (02:1a:11:f0:c8:3b), Dst: Apple_13:c5:58 (60:33:4b:13:c5:58)
+    Internet Protocol Version 4, Src: 8.8.8.8, Dst: 192.168.43.9
+    Internet Control Message Protocol
+        Type: 0 (Echo (ping) reply)
+        Code: 0
+        Checksum: 0xc3b3 [correct]
+        [Checksum Status: Good]
+        Identifier (BE): 55099 (0xd73b)
+        Identifier (LE): 15319 (0x3bd7)
+        Sequence Number (BE): 0 (0x0000)
+        Sequence Number (LE): 0 (0x0000)
+        [Request frame: 4]
+        [Response time: 492,204 ms]
+        Timestamp from icmp data: May 30, 2013 19:45:17.283108000 Hora estándar de Argentina
+        [Timestamp from icmp data (relative): 0.492283000 seconds]
+        Data (48 bytes)
+        
+
     0
 
 ¿Cuál es la marca de tiempo del paquete 12, que solo incluye el día del mes y el año?
-nota: Wireshark basa que es el tiempo fuera de la zona horaria de sus dispositivos, si su respuesta es incorrecta, intente un día más o menos. 
+nota: Wireshark basa que es el tiempo fuera de la zona horaria de sus dispositivos, si su respuesta es incorrecta, 
+intente un día más o menos. 
+
+    Frame 12: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface en1, id 0
+    Ethernet II, Src: Apple_13:c5:58 (60:33:4b:13:c5:58), Dst: MS-NLB-PhysServer-26_11:f0:c8:3b (02:1a:11:f0:c8:3b)
+    Internet Protocol Version 4, Src: 192.168.43.9, Dst: 8.8.4.4
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0x2bfd [correct]
+        [Checksum Status: Good]
+        Identifier (BE): 56123 (0xdb3b)
+        Identifier (LE): 15323 (0x3bdb)
+        Sequence Number (BE): 0 (0x0000)
+        Sequence Number (LE): 0 (0x0000)
+        [No response seen]
+        Timestamp from icmp data: May 30, 2013 19:45:20.253336000 Hora estándar de Argentina
+        [Timestamp from icmp data (relative): 0.000110000 seconds]
+        Data (48 bytes)
+
  
     may 30,2013
 
-¿Cuál es la cadena de datos completa para el paquete 18?
-Seleccionar el campo, hacer click derecho> copiar > valor
+¿Cuál es la cadena de datos completa para el paquete 18? Seleccionar el campo, hacer click derecho> copiar > valor
  
+    Frame 18: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface en1, id 0
+    Ethernet II, Src: Apple_13:c5:58 (60:33:4b:13:c5:58), Dst: MS-NLB-PhysServer-26_11:f0:c8:3b (02:1a:11:f0:c8:3b)
+    Internet Protocol Version 4, Src: 192.168.43.9, Dst: 4.2.2.2
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xb6d2 [correct]
+        [Checksum Status: Good]
+        Identifier (BE): 56635 (0xdd3b)
+        Identifier (LE): 15325 (0x3bdd)
+        Sequence Number (BE): 0 (0x0000)
+        Sequence Number (LE): 0 (0x0000)
+        [Response frame: 19]
+        Timestamp from icmp data: May 30, 2013 19:45:24.348349000 Hora estándar de Argentina
+        [Timestamp from icmp data (relative): 0.000092000 seconds]
+        Data (48 bytes)
+            Data: 08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637
+            [Length: 48]
+
+
     08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637
 
 ## Tráfico DNS
