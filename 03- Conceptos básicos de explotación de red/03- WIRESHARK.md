@@ -223,7 +223,18 @@ intente un día más o menos.
 ## Tráfico HTTP  
 
 ¿Qué porcentaje de paquetes se originan en el sistema de nombres de dominio?
- 
+Estadisticas-> Jerarquia de protocolos
+
+     - Domain Name System
+         - 4.651162790697675
+         - 2
+         - 0.7692001115937985
+         - 193
+         - 50.7999947348783
+         - 2
+         - 193
+         - 50.7999947348783
+     
     4.7
 
 ¿Qué punto final termina en .237?
@@ -236,6 +247,27 @@ intente un día más o menos.
 
 Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 18?
  
+    Frame 4: 533 bytes on wire (4264 bits), 533 bytes captured (4264 bits)
+    Ethernet II, Src: Xerox_00:00:00 (00:00:01:00:00:00), Dst: fe:ff:20:00:01:00 (fe:ff:20:00:01:00)
+    Internet Protocol Version 4, Src: 145.254.160.237, Dst: 65.208.228.223
+    Transmission Control Protocol, Src Port: 3372, Dst Port: 80, Seq: 951057940, Ack: 290218380, Len: 479
+    Hypertext Transfer Protocol
+        GET /download.html HTTP/1.1\r\n
+        Host: www.ethereal.com\r\n
+        User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6) Gecko/20040113\r\n
+        Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,image/jpeg,image/gif;q=0.2,*/*;q=0.1\r\n
+        Accept-Language: en-us,en;q=0.5\r\n
+        Accept-Encoding: gzip,deflate\r\n
+        Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n
+        Keep-Alive: 300\r\n
+        Connection: keep-alive\r\n
+        Referer: http://www.ethereal.com/development.html\r\n
+        \r\n
+        [Full request URI: http://www.ethereal.com/download.html]
+        [HTTP request 1/1]
+        [Response in frame: 38]
+
+
     http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-2309191948673629&random=1084443430285&lmt=1082467020&format=468x60_as&output=html&url=http%3A%2F%2Fwww.ethereal.com%2Fdownload.html&color_bg=FFFFFF&color_text=333333&color_link=000000&color_url=666633&color_border=666633
 
 ¿Qué nombre de dominio se solicitó del paquete 38?
@@ -243,6 +275,31 @@ Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 1
     www.ethereal.com
 
 Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 38?
+
+    Frame 38: 478 bytes on wire (3824 bits), 478 bytes captured (3824 bits)
+    Ethernet II, Src: fe:ff:20:00:01:00 (fe:ff:20:00:01:00), Dst: Xerox_00:00:00 (00:00:01:00:00:00)
+    Internet Protocol Version 4, Src: 65.208.228.223, Dst: 145.254.160.237
+    Transmission Control Protocol, Src Port: 80, Dst Port: 3372, Seq: 290236320, Ack: 951058419, Len: 424
+    [14 Reassembled TCP Segments (18364 bytes): #6(1380), #8(1380), #10(1380), #11(1380), #14(1380), #16(1380), #20(1380), #21(1380), #23(1380), #29(1380), #31(1380), #32(1380), #34(1380), #38(424)]
+    Hypertext Transfer Protocol
+        HTTP/1.1 200 OK\r\n
+        Date: Thu, 13 May 2004 10:17:12 GMT\r\n
+        Server: Apache\r\n
+        Last-Modified: Tue, 20 Apr 2004 13:17:00 GMT\r\n
+        ETag: "9a01a-4696-7e354b00"\r\n
+        Accept-Ranges: bytes\r\n
+        Content-Length: 18070\r\n
+        Keep-Alive: timeout=15, max=100\r\n
+        Connection: Keep-Alive\r\n
+        Content-Type: text/html; charset=ISO-8859-1\r\n
+        \r\n
+        [HTTP response 1/1]
+        [Time since request: 3.935659000 seconds]
+        [Request in frame: 4]
+        [Request URI: http://www.ethereal.com/download.html]
+        File Data: 18070 bytes
+    eXtensible Markup Language
+
 
     http://www.ethereal.com/download.html
 
