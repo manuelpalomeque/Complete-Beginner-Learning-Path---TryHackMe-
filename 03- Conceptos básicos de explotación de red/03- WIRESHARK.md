@@ -307,13 +307,86 @@ Mirando el flujo de datos, ¿cuál es el URI de solicitud completo del paquete 3
 
 Mirando el flujo de datos, ¿cuál es el URI de solicitud completo para el paquete 31?
  
+    Frame 31: 471 bytes on wire (3768 bits), 471 bytes captured (3768 bits)
+    Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    Transmission Control Protocol, Src Port: 38714, Dst Port: 443, Seq: 2021417719, Ack: 2025616914, Len: 405
+    Transport Layer Security
+    Hypertext Transfer Protocol
+        GET /icons/apache_pb.png HTTP/1.1\r\n
+        Host: localhost\r\n
+        User-Agent: Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2\r\n
+        Accept: image/png,*/*;q=0.5\r\n
+        Accept-Language: fr,fr-fr;q=0.8,en-us;q=0.5,en;q=0.3\r\n
+        Accept-Encoding: gzip,deflate\r\n
+        Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n
+        Keep-Alive: 300\r\n
+        Connection: keep-alive\r\n
+        Referer: https://localhost/\r\n
+        \r\n
+        [Full request URI: https://localhost/icons/apache_pb.png]
+        [HTTP request 2/5]
+        [Prev request in frame: 29]
+        [Response in frame: 32]
+        [Next request in frame: 36]
+  
+
+
     https://localhost/icons/apache_pb.png
 
 Mirando el flujo de datos, ¿cuál es el URI de solicitud completo para el paquete 50?
  
+    Frame 50: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits)
+    Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    Transmission Control Protocol, Src Port: 38713, Dst Port: 443, Seq: 2022458140, Ack: 2026195659, Len: 413
+    Transport Layer Security
+    Hypertext Transfer Protocol
+        GET /icons/back.gif HTTP/1.1\r\n
+        Host: localhost\r\n
+        User-Agent: Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2\r\n
+        Accept: image/png,*/*;q=0.5\r\n
+        Accept-Language: fr,fr-fr;q=0.8,en-us;q=0.5,en;q=0.3\r\n
+        Accept-Encoding: gzip,deflate\r\n
+        Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n
+        Keep-Alive: 300\r\n
+        Connection: keep-alive\r\n
+        Referer: https://localhost/test2/\r\n
+        \r\n
+        [Full request URI: https://localhost/icons/back.gif]
+        [HTTP request 5/6]
+        [Prev request in frame: 47]
+        [Response in frame: 52]
+        [Next request in frame: 56]
+
+
     https://localhost/icons/back.gif
 
 ¿Cuál es el User-Agent listado en el paquete 50?
  
+    Frame 50: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits)
+    Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    Transmission Control Protocol, Src Port: 38713, Dst Port: 443, Seq: 2022458140, Ack: 2026195659, Len: 413
+    Transport Layer Security
+    Hypertext Transfer Protocol
+        GET /icons/back.gif HTTP/1.1\r\n
+        Host: localhost\r\n
+        User-Agent: Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2\r\n
+        Accept: image/png,*/*;q=0.5\r\n
+        Accept-Language: fr,fr-fr;q=0.8,en-us;q=0.5,en;q=0.3\r\n
+        Accept-Encoding: gzip,deflate\r\n
+        Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n
+        Keep-Alive: 300\r\n
+        Connection: keep-alive\r\n
+        Referer: https://localhost/test2/\r\n
+        \r\n
+        [Full request URI: https://localhost/icons/back.gif]
+        [HTTP request 5/6]
+        [Prev request in frame: 47]
+        [Response in frame: 52]
+        [Next request in frame: 56]
+    
+
     Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
 
