@@ -100,3 +100,29 @@ proceso de caché no está incluida en la clave de caché?
 
     web cache poisoning
 
+## Poniéndolo en Repeat [er]
+
+Para comenzar, haga clic en 'Cuenta' (esto podría ser 'Iniciar sesión' según la versión de Juice Shop) en la esquina 
+superior derecha de Juice Shop para navegar a la página de inicio de sesión.
+
+    En el navegador ir a la dirección IP de la maquina virtual para que abra la pagina 10.10.82.71
+    http://10.10.82.71/#/login
+
+Intente iniciar sesión con credenciales no válidas. ¿Qué error se genera cuando falla el inicio de sesión?
+
+    Invalid email or password
+
+Ahora que hemos enviado la solicitud a Repeater, intentemos ajustar la solicitud de modo que enviemos una sola 
+cotización (') como correo electrónico y contraseña. ¿Qué error se genera a partir de esta solicitud?
+
+    Cambiar a pestaña Repeater
+    Cambiar el usuario yo la clave y poner un “’”
+    Hacer click en send
+
+    SQLITE_ERROR
+
+¿Qué campo tenemos que modificar para enviar una revisión de cero estrellas?
+
+    rating
+
+
