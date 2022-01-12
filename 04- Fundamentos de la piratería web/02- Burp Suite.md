@@ -82,3 +82,21 @@ bueno si necesitamos algo en Google en el mismo navegador.
     is in target scope
 
 ## Definición de destino
+
+Navegue por el resto de la aplicación para construir nuestra estructura de página en la pestaña de destino. Una vez que 
+haya visitado la mayoría de las páginas del sitio, regrese a Burp Suite y expanda los distintos niveles del directorio 
+de la aplicación. ¿Cómo llamamos a esta representación de la aplicación web colectiva?
+
+    site map
+
+¿Cuál es el término para navegar por la aplicación como un usuario normal antes de examinarla más a fondo?
+
+    happy path
+
+Las definiciones de problemas que se encuentran aquí son cómo Burp Suite define los problemas dentro de los informes. 
+Al comenzar, estas definiciones de problemas pueden ser particularmente útiles para comprender y categorizar varios 
+hallazgos que podamos tener. ¿Qué problema de envenenamiento surge cuando una aplicación detrás de una entrada de 
+proceso de caché no está incluida en la clave de caché?
+
+    web cache poisoning
+
