@@ -125,4 +125,31 @@ cotización (') como correo electrónico y contraseña. ¿Qué error se genera a
 
     rating
 
+## ¡Ayudar! ¡Hay un intruso!
+
+¿Qué tipo de ataque nos permite seleccionar múltiples conjuntos de cargas útiles (uno por posición) e iterar a través 
+de ellos simultáneamente?
+
+    Pitchfork 
+
+¿Qué tal el tipo de ataque que nos permite usar un conjunto de carga útil en cada posición que hemos seleccionado 
+simultáneamente?
+
+    Battering Ram
+
+¿Qué tipo de ataque nos permite seleccionar múltiples conjuntos de carga útil (uno por posición) e iterar a través de 
+todas las combinaciones posibles?
+
+    Cluster Bomb
+
+Quizás el más utilizado, ¿qué tipo de ataque nos permite recorrer nuestro conjunto de cargas útiles,  colocando la 
+siguiente carga útil disponible en cada posición a su vez?
+
+    Sniper
+
+Finalmente, haga clic en 'Iniciar ataque'. ¿Cuál es la primera carga útil que devuelve un código de estado 200, que 
+muestra que hemos omitido con éxito la autenticación?
+
+    a' or 1=1--
+
 
