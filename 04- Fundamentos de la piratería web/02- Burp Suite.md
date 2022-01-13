@@ -152,4 +152,35 @@ muestra que hemos omitido con éxito la autenticación?
 
     a' or 1=1--
 
+## Resulta que las máquinas son mejores en matemáticas que nosotros
+
+Analiza los resultados. ¿En qué se mide la entropía estimada efectiva?
+
+    bits
+
+Para encontrar los bits utilizables de entropía, a menudo tenemos que hacer algunos ajustes para tener un conjunto de 
+datos normalizado. ¿Qué artículo se convierte en este proceso?
+
+    token
+
+##  Decodificador y comparador
+
+¿Con qué carácter se decodifica el% 20 en la solicitud que copiamos en Decoder
+
+    space
+
+Al igual que CyberChef, Decoder también tiene un modo "Mágico" en el que intentará decodificar automáticamente la 
+entrada que se le proporcione. ¿Cómo se llama este modo? 
+
+    smart decode
+
+¿Qué podemos cargar en Comparer para ver las diferencias en los distintos roles de usuario a los que pueden acceder? 
+Esto es muy útil para verificar problemas de control de acceso.
+
+    site maps
+
+Comparer puede realizar una diferencia contra dos métricas diferentes, ¿cuál nos permite examinar los datos cargados 
+como están en lugar de dividirlos en bytes?
+
+    words
 
