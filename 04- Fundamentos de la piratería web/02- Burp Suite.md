@@ -184,3 +184,12 @@ como están en lugar de dividirlos en bytes?
 
     words
 
+## Burp Suite Scanner 
+Descarga el informe adjunto a esta tarea. ¿Cuál es el único problema crítico?
+ 
+    Cross-origin resource sharing: arbitrary origin trusted
+
+¿Cuántos problemas bajos 'Ciertos'(Certain) encontró Burp?
+
+    12
+
