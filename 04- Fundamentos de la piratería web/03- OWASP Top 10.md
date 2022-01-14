@@ -35,3 +35,26 @@ Ahora intente hacer el mismo truco y vea si puede iniciar sesión como arthur.
 
     s9ac0f7db4fda460ac3edeb75d75e16e
 
+## [Severidad 3] Sensitive Data Exposure (Challenge)
+
+¿Cuál es el nombre del directorio mencionado?
+ 
+    /assets
+
+Navegue hasta el directorio que encontró en la pregunta uno. ¿Qué archivo es probable que contenga datos sensibles?
+ 
+    webapp.db
+ 
+Utilice el material de apoyo para acceder a los datos confidenciales. ¿Cuál es el hash de la contraseña del usuario administrador?
+ 
+    6eea9b7ef19179a06954edd0f6c05ceb 
+
+Rompe el hachís.
+¿Cuál es la contraseña de texto sin formato del administrador?
+ 
+    qwertyuiop
+ 
+Inicie sesión como administrador. ¿Qué es la bandera?
+
+    THM{Yzc2YjdkMjE5N2VjMzNhOTE3NjdiMjdl}
+
