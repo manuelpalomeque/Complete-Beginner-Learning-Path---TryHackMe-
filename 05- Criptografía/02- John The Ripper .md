@@ -44,4 +44,18 @@
  
     colossal
 
+## Rompiendo hashes de autenticación de Windows
 
+¿En qué necesitamos establecer la bandera de "formato" para poder descifrar esto?
+ 
+    NT
+
+¿Cuál es el valor descifrado de esta contraseña?
+ 
+    mushroom
+
+## Craqueo de hashes de / etc / shadow  
+
+¿Cuál es la contraseña de root?
+
+    1234
