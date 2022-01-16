@@ -59,3 +59,26 @@
 ¿Cuál es la contraseña de root?
 
     1234
+
+## Modo de grieta única
+
+¿Cuál es la contraseña de Joker?
+
+    jok3r
+
+## Reglas personalizadas
+
+¿Qué nos permiten explotar las reglas personalizadas?
+
+    predictability
+
+¿Qué regla usaríamos para agregar todas las letras mayúsculas al final de la palabra?
+ 
+    Az"[A-Z]"
+
+¿Qué marca usaríamos para llamar a una regla personalizada llamada "THMRules"?
+
+    --rule=THMRules
+
+## Descifrado de archivos zip protegidos con contraseña
+
