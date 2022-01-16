@@ -75,3 +75,17 @@ Forma completa de XML
 ¿Cómo podemos especificar la versión XML y la codificación en un documento XML?
 
     XML prolog
+
+## [Severity 4] XML External Entity – DTD
+
+¿Cómo se define un nuevo ELEMENTO?
+ 
+    !ELEMENT
+
+¿Cómo se define un elemento ROOT?
+ 
+    !DOCTYPE
+ 
+¿Cómo se define una nueva ENTIDAD?
+
+    !ENTITY
