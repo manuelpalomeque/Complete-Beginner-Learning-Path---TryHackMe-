@@ -139,6 +139,39 @@ Cambie "XSS Playground" a "Soy un hacker" agregando un comentario y usando Javas
  
     websites_can_be_easily_defaced_with_xss
 
+## [Severity 8] Insecure Deserialization
 
+¿Quién desarrolló la aplicación Tomcat?
+ 
+    the apache software foundation
 
+¿Qué tipo de ataque que bloquea los servicios se puede realizar con deserialización insegura?
+ 
+    denial of service
+
+## [Severity 8] Insecure Deserialization – Objects
+
+Seleccione el término correcto de la siguiente declaración:
+
+si un perro estuviera durmiendo, sería esto:
+A) Un estado / A State
+B) Un comportamiento  / A Behaviour 
+
+    A Behaviour  
+
+## [Severity 8] Insecure Deserialization – Deserialization 
+
+¿Cuál es el nombre del formato base-2 con el que se envían los datos a través de una red? 
+
+    binary
+
+## [Severity 8] Insecure Deserialization – Cookies
+
+Si una cookie tuviera la ruta  webapp.com/login  , ¿cuál sería la URL que debe visitar el usuario?
+ 
+    webapp.com/login
+
+¿Cuál es el acrónimo de la tecnología web sobre la que   funcionan las cookies seguras ?
+
+    HTTPS
 
