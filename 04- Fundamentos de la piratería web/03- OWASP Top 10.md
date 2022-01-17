@@ -103,3 +103,42 @@ Forma completa de XML
 ¿Cuáles son los primeros 18 caracteres de la clave privada de Falcon?
 
     MIIEogIBAAKCAQEA7b
+
+## [Severity 5] Broken Access Control (IDOR Challenge)
+
+Mira las notas de otros usuarios. ¿Qué es la bandera?
+
+    flag{fivefourthree}
+
+## [Severity 6] Security Misconfiguration 
+
+¡Hackea la aplicación web y encuentra la bandera!
+
+    THM{4b9513968fd564a87b28aa1f9d672e17}
+
+## [Severity 7] Cross-site Scripting
+
+Vaya a  http: // MACHINE_IP /  en su navegador y haga clic en la pestaña "Reflected XSS" en la barra de navegación; cree una carga útil XSS reflejada que generará una ventana emergente que diga "Hola".
+ 
+    ThereIsMoreToXSSThanYouThink
+
+En la misma página reflectante, cree una carga útil XSS reflejada que generará una ventana emergente con la dirección IP de su máquina.
+ 
+    ReflectiveXss4TheWin
+
+Ahora navegue a  http: // MACHINE_IP /  en su navegador y  haga clic en la pestaña "Stored XSS" en la barra de navegación; hacer una cuenta. 
+Luego agregue un comentario y vea si puede insertar algo de su propio HTML.
+ 
+    HTML_T4gs
+
+En la misma página, cree que aparezca un cuadro emergente de alerta en la página con las cookies de su documento.
+ 
+    W3LL_D0N3_LVL2
+
+Cambie "XSS Playground" a "Soy un hacker" agregando un comentario y usando Javascript.
+ 
+    websites_can_be_easily_defaced_with_xss
+
+
+
+
