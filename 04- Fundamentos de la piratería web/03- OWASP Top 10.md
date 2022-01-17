@@ -89,3 +89,17 @@ Forma completa de XML
 ¿Cómo se define una nueva ENTIDAD?
 
     !ENTITY
+
+## [Severity 4] XML External Entity – Exploiting
+
+¿Cuál es el nombre del usuario en /etc/passwd?
+ 
+    falcon
+
+¿Dónde se encuentra la clave SSH de falcon?
+ 
+    /home/falcon/.ssh/id_rsa
+
+¿Cuáles son los primeros 18 caracteres de la clave privada de Falcon?
+
+    MIIEogIBAAKCAQEA7b
