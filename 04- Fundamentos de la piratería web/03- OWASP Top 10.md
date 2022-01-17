@@ -175,3 +175,36 @@ Si una cookie tuviera la ruta  webapp.com/login  , ¿cuál sería la URL que deb
 
     HTTPS
 
+## [Severity 8] Insecure Deserialization - Cookies Practical
+
+1ra bandera (valor de la cookie)
+ 
+    THM{good_old_base64_huh}
+
+2da bandera (panel de administración)
+
+    THM{heres_the_admin_flag}
+
+## [Severity 8] Insecure Deserialization - Code Execution
+
+flag.txt
+
+    4a69a7ff9fd68
+
+## [Severity 9] Components with Known Vulnerabilities - Lab
+
+Cuántos caracteres hay en / etc / passwd (use wc -c / etc / passwd para obtener la respuesta)
+
+    1611
+
+## [Severity 10] Insufficient Logging and Monitoring
+
+¿Qué dirección IP está usando el atacante?
+ 
+    49.99.13.16
+
+¿Qué tipo de ataque se está llevando a cabo?
+ 
+    brute force
+
+
