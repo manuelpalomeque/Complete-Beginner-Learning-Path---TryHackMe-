@@ -61,3 +61,20 @@ Pregunta #3: ¡Elimine todas las reseñas de 5 estrellas!
 
 ## De donde vino eso?
 
+Pregunta #1: ¡  Realiza un DOM XSS!
+
+    9aaf4bbea5c30d00a1f5bbcfce4db6d4b0efe0bf
+
+Pregunta #2: ¡  Realice un XSS persistente!
+
+    149aa8ce13d7a4a8a931472308e269c94dc5f156
+
+Pregunta #3: ¡  Realice un XSS reflejado!
+
+    23cefee1527bde039295b261eeb29e1edc660a0
+
+## ¡Exploración!
+
+El acceso al  / # / cuadro de indicadores / página
+
+    7efd3174f9dd5baa03a7882027f2824d2f72d86e
