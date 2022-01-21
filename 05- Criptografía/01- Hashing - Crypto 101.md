@@ -46,5 +46,22 @@ Rompe el hash "5b31f93c09ad1d065c0491b764d04933" con herramientas en línea
  
     32
 
+## Craqueo de contraseñas
+
+Romper este hash: $ 2a $ 06 $ 7yoU3Ng8dHTXphAg913cyO6Bjs3K5lBnwq5FJyA6d01pMSrddr1ZG
+ 
+    85208520
+ 
+Rompe este hash: 9eb7ee7f551d2f0ac684981bd1f1e2fa4a37590199636753efe614d4db30e8e1
+ 
+    halloween
+
+Rompe este hash: $ 6 $ GQXVvW4EuM $ ehD6jWiMsfNorxy5SINsgdlxmAEl3.yif0 / c3NqzGLa0P.S7KRDYjycw5bnYkF5ZtB8wQy8KnskuWQS3Yr1wQ0
+ 
+    spaceman
+
+¿Estás aburrido de esto todavía? Rompe este hash: b6b0d451bbf6fed658659a9e7e5598fe
+ 
+    funforyou
 
 
