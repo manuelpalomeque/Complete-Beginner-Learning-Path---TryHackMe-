@@ -64,4 +64,12 @@ Rompe este hash: $ 6 $ GQXVvW4EuM $ ehD6jWiMsfNorxy5SINsgdlxmAEl3.yif0 / c3NqzGL
  
     funforyou
 
+## Hash para comprobar la integridad
 
+¿Cuál es la suma SHA1 para el amd64 Kali 2019.4 ISO? http://old.kali.org/kali-images/kali-2019.4/
+ 
+    186c5227e24ceb60deb711f1bdc34ad9f4718ff9  
+
+¿Cuál es el número de modo hashcat para HMAC-SHA512 (clave = $ pass)?
+ 
+    1750
