@@ -82,3 +82,20 @@
 
 ## Descifrado de archivos zip protegidos con contraseña
 
+¿Cuál es la contraseña del archivo secure.zip?
+ 
+    pass123
+
+¿Cuál es el contenido de la bandera dentro del archivo zip?
+ 
+    THM{w3ll_d0n3_h4sh_r0y4l}
+
+## Descifrado de archivos RAR protegidos con contraseña
+
+¿Cuál es la contraseña del archivo secure.rar?
+ 
+    password
+
+¿Cuál es el contenido de la bandera dentro del archivo zip
+
+    THM{r4r_4rch1ve5_th15_t1m3}
