@@ -47,3 +47,23 @@
 ¿Qué grupo tiene sus contraseñas replicadas en controladores de dominio de solo lectura?
 
     Allowed RODC Password Replication Group
+
+## Fideicomisos + Políticas 
+
+¿Qué tipo de confianza fluye de un dominio de confianza a un dominio de confianza?
+ 
+    directional
+
+¿Qué tipo de fideicomisos se expande para incluir otros dominios de confianza?
+
+    transitive
+
+## Servicios de dominio de Active Directory + autenticación
+
+¿Qué tipo de autenticación utiliza tickets? 
+ 
+    kerberos
+
+¿Qué servicio de dominio puede crear, validar y revocar certificados de clave pública?
+ 
+    certificate services
