@@ -40,3 +40,14 @@
 
     OpenID Connect
 
+##  Tipos de servidores
+
+¿Cuál puede considerarse el servidor más importante?
+ 
+    Domain Controler
+
+¿Qué servidor puede almacenar correos electrónicos?
+
+    mail server
+
+
