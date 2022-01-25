@@ -46,3 +46,25 @@ Que es 118613842 % 9091
  
     Si
 
+## RSA - Rivest Shamir Adleman
+ 
+p = 4391, q = 6659. ¿Cuánto es n?
+
+    29239669
+
+## Certificados y firmas digitales
+
+¿Quién emite el certificado HTTPS de TryHackMe?
+
+    R3
+
+## Autenticación SSH
+
+¿Qué algoritmo usa la clave?
+ 
+    RSA
+
+Descifra la contraseña con John The Ripper y rockyou, ¿cuál es la frase de contraseña para la clave?
+
+
+    delicious
