@@ -68,3 +68,12 @@ Descifra la contraseña con John The Ripper y rockyou, ¿cuál es la frase de co
 
 
     delicious
+
+## PGP, GPG y AES
+
+Tiene la clave privada y un archivo cifrado con la clave pública. Descifra el archivo. ¿Cuál es la palabra secreta?
+
+    Pineapple
+
+
+
