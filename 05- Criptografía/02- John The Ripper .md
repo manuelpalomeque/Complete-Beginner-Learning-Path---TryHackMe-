@@ -99,3 +99,11 @@
 ¿Cuál es el contenido de la bandera dentro del archivo zip
 
     THM{r4r_4rch1ve5_th15_t1m3}
+
+##  Cómo descifrar claves SSH con John?
+
+¿Qué es la contraseña de clave privada SSH?
+
+    mango
+
+
