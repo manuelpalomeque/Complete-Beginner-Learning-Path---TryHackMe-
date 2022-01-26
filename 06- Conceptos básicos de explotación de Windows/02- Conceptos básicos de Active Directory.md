@@ -67,3 +67,17 @@
 ¿Qué servicio de dominio puede crear, validar y revocar certificados de clave pública?
  
     certificate services
+
+## AD en la nube
+
+¿Cuál es el equivalente en Azure AD de LDAP?
+ 
+    Rest APIs
+
+¿Cuál es el equivalente de Azure AD a Domains and Forests?
+ 
+    Tenants
+
+¿Cuál es el equivalente de Windows Server AD de los invitados?
+ 
+    Trusts
