@@ -81,3 +81,23 @@
 ¿Cuál es el equivalente de Windows Server AD de los invitados?
  
     Trusts
+
+##  Laboratorio práctico
+
+¿Cuál es el nombre del sistema operativo Windows 10?
+ 
+    windows 10 enterprise evaluation
+ 
+¿Cuál es el segundo nombre de "Administrador"?
+ 
+    Admin2
+
+¿Qué grupo tiene una "V" mayúscula en el nombre del grupo?
+ 
+    Hyper-V administrators
+    
+¿Cuándo se estableció por última vez la contraseña para el usuario de SQLService?
+ 
+    5/13/2020 8:26:58 PM
+
+
