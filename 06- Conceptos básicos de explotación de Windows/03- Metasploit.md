@@ -68,3 +68,33 @@ Dejar una consola de Metasploit en ejecución no siempre es conveniente y puede 
  
     save
 
+## Módulos para cada ocasión
+ 
+Fácilmente el módulo más común utilizado, ¿qué módulo contiene todo el código de explotación que usaremos?
+ 
+    exploit
+
+Usado junto con exploits, ¿qué módulo contiene los diversos bits de shellcode que enviamos para que se ejecuten después de la explotación?
+ 
+    payload
+
+¿Qué módulo se usa más comúnmente en las máquinas de escaneo y verificación son explotables? Esto no es lo mismo que la explotación real, por supuesto.
+ 
+    auxiliary
+
+Una de las actividades más comunes después de la explotación es el saqueo y el pivoteo. ¿Qué módulo proporciona estas capacidades?
+ 
+    post
+
+Comúnmente utilizado en la ofuscación de la carga útil, ¿qué módulo nos permite modificar la "apariencia" de nuestro exploit para que podamos evitar la detección de firmas?
+ 
+    encoder
+
+Por último, pero no menos importante, ¿qué módulo se usa con desbordamiento de búfer y ataques ROP?
+ 
+    nop
+
+No todos los módulos se cargan de forma predeterminada, ¿qué comando podemos usar para cargar diferentes módulos? 
+ 
+    load
+
