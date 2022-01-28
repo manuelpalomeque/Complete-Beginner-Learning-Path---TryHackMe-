@@ -98,3 +98,63 @@ No todos los módulos se cargan de forma predeterminada, ¿qué comando podemos 
  
     load
 
+## Move The Shell
+
+¿Qué servicio identifica nmap ejecutándose en el puerto 135?
+
+    msrpc
+
+Ahora que hemos escaneado el sistema de nuestra víctima, intentemos conectarnos con una carga útil de Metasploit. 
+Primero, tendremos que buscar la carga útil de destino. En Metasploit 5 (la versión más reciente en el momento de 
+escribir este artículo), simplemente puede escribir useseguido de una cadena única que se encuentra solo dentro del 
+exploit de destino. Por ejemplo, pruebe esto ahora con el siguiente comando use icecast. ¿Cuál es la ruta completa de
+nuestro exploit que ahora aparece en el indicador de msfconsole? *Esto incluirá la sección de explotación al principio
+
+    exploit/windows/http/icecast_header
+
+¿Cuál es el nombre de la columna en el extremo izquierdo de la consola que aparece junto a 'Nombre'?
+
+    #
+
+## Estamos dentro, ¿ahora qué?
+
+Lo primero es lo primero, nuestro shell/proceso inicial normalmente no es muy estable. Sigamos adelante e intentemos pasar a un proceso diferente. Primero, enumeremos los procesos usando el comando ps. ¿Cuál es el nombre del servicio de cola?
+ 
+    spoolsv.exe
+
+¡Sigamos adelante y pasemos al proceso de spool o al menos intentemos hacerlo! ¿Qué comando usamos para transferirnos al proceso? Esto no funcionará en este momento ya que no tenemos suficientes privilegios, ¡pero aún podemos intentarlo!
+ 
+    migrate
+
+Bueno, esa migración no funcionó, busquemos más información sobre el sistema para que podamos intentar elevarlo. ¿Qué comando podemos ejecutar para obtener más información sobre el usuario actual que ejecuta el proceso en el que nos encontramos?
+ 
+    getuid
+
+¿Qué tal encontrar más información sobre el sistema en sí?
+ 
+    sysinfo
+
+Esto puede requerir un poco de búsqueda en Google, ¿qué ejecutamos para cargar mimikatz (más específicamente, la nueva versión de mimikatz) para que podamos usarlo? 
+ 
+    load kiwi
+
+Avancemos y averigüemos los privilegios de nuestro usuario actual, ¿qué comando ejecutamos?
+ 
+    getprivs
+
+¿Qué comando ejecutamos para transferir archivos a nuestra computadora víctima?
+ 
+    c
+
+¿Qué tal si queremos ejecutar un módulo de Metasploit?
+ 
+    run
+
+Una pregunta simple pero aún bastante necesaria, ¿qué comando ejecutamos para averiguar la información de red y las interfaces de nuestra víctima?
+
+    ipconfig
+
+Una pregunta adicional rápida, ¿qué comando podemos ejecutar en nuestra sesión de meterpreter para generar un shell de sistema normal? 
+
+    shell
+
