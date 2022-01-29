@@ -154,7 +154,26 @@ Una pregunta simple pero aún bastante necesaria, ¿qué comando ejecutamos para
 
     ipconfig
 
-Una pregunta adicional rápida, ¿qué comando podemos ejecutar en nuestra sesión de meterpreter para generar un shell de sistema normal? 
+Una pregunta adicional rápida, ¿qué comando podemos ejecutar en nuestra sesión de meterpreter para generar un shell de 
+sistema normal? 
 
     shell
+
+## Hacer que Cisco se sienta orgulloso
+
+Avancemos y ejecutemos el comando run autoroute -h, esto abrirá el menú de ayuda para la ruta automática. ¿Qué comando 
+ejecutamos para agregar una ruta a la siguiente subred: 172.18.1.0/24? Usa la -nbandera en tu respuesta.
+ 
+    run autoroute -d 172.18.1.0 -n 255.255.255.0
+
+Además, podemos iniciar un servidor proxy de socks5 fuera de esta sesión. Ponga en segundo plano nuestra sesión actual 
+de meterpreter y ejecute el comando search server/socks5. ¿Cuál es la ruta completa al módulo auxiliar de socks5?
+ 
+    auxiliaryserver/socks5
+
+Una vez que hayamos iniciado un servidor de calcetines, podemos modificar nuestro archivo /etc/proxychains.conf para 
+incluir nuestro nuevo servidor. ¿Qué comando anteponemos a nuestros comandos (fuera de Metasploit) para ejecutarlos a 
+través de nuestro servidor socks5 con proxychains?
+
+    proxychains
 
