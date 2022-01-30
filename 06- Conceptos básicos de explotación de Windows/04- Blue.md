@@ -28,6 +28,20 @@ Show options
  
     RHOSTS
 
-Por lo general, estaría bien ejecutar este exploit como está; sin embargo, por el bien de aprender, debe hacer una cosa más antes de explotar el objetivo. Ingrese el siguiente comando y presione enter:
+Por lo general, estaría bien ejecutar este exploit como está; sin embargo, por el bien de aprender, debe hacer una cosa 
+más antes de explotar el objetivo. Ingrese el siguiente comando y presione enter:
 
     set payload windows/x64/shell/reverse_tcp
+
+## Escalar
+
+Si aún no lo ha hecho, ponga en segundo plano el shell obtenido anteriormente (CTRL + Z). Investigue en línea cómo 
+convertir un shell en un shell meterpreter en metasploit. ¿Cuál es el nombre del módulo de publicación que usaremos? 
+(Ruta exacta, similar al exploit que seleccionamos previamente) 
+ 
+    post/multi/manage/shell_to_meterpreter 
+
+Seleccione esto (use MODULE_PATH). Mostrar opciones, ¿qué opción debemos cambiar?
+
+    SESSION
+
