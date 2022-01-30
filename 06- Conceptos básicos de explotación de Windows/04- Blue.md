@@ -45,3 +45,32 @@ Seleccione esto (use MODULE_PATH). Mostrar opciones, ¿qué opción debemos camb
 
     SESSION
 
+## Agrietamiento
+
+Dentro de nuestro shell meterpreter elevado, ejecute el comando 'hashdump'. Esto volcará todas las contraseñas en la 
+máquina siempre que tengamos los privilegios correctos para hacerlo. ¿Cuál es el nombre del usuario no predeterminado? 
+ 
+    jon
+
+Copie este hash de contraseña en un archivo e investigue cómo descifrarlo. ¿Cuál es la contraseña descifrada?
+
+    alqfna22
+
+## ¡Encuentra banderas!
+
+Flag1? Esta bandera se puede encontrar en la raíz del sistema. 
+ 
+    flag{access_the_machine}
+
+Flag2? Esta bandera se puede encontrar en la ubicación donde se almacenan las contraseñas dentro de Windows.
+Errata: a Windows realmente no le gusta la ubicación de esta bandera y ocasionalmente puede eliminarla. En algunos 
+casos, puede ser necesario terminar / reiniciar la máquina y volver a ejecutar el exploit para encontrar esta bandera. 
+Esto es relativamente raro, sin embargo, puede suceder. 
+ 
+    flag{sam_database_elevated_access}
+
+flag3? Esta bandera se puede encontrar en una excelente ubicación para saquear. Después de todo, los administradores 
+suelen tener cosas bastante interesantes guardadas. 
+
+    flag{admin_documents_can_be_valuable}
+
