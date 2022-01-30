@@ -21,3 +21,15 @@ Al usar un shell de enlace, ¿ejecutaría un oyente en el atacante (A) o el obje
 ¿Cómo se conectaría a un shell de enlace en la dirección IP: 10.10.10.11 con el puerto 8080?
 
     nc 10.10.10.11 8080
+
+## Netcat Shell Stabilisation
+¿Cómo cambiaría el tamaño de su terminal para tener 238 columnas?
+ 
+    stty cols 238
+
+¿Cuál es la sintaxis para configurar un servidor web Python3 en el puerto 80?
+ 
+    sudo python3 -m http.server 80
+
+## Socat
+
