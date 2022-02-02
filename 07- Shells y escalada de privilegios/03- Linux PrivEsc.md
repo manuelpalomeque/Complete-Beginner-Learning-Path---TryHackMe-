@@ -34,3 +34,23 @@ Un programa de la lista no tiene una secuencia de escape de shell en GTFOBins. �
 
     Apache2
 
+##  Trabajos cron - Variable de entorno PATH
+
+¿Cuál es el valor de la variable PATH en /etc/crontab?
+
+    /home/user:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+## Contraseñas y claves - Archivos de historial
+
+¿Cuál es el comando mysql completo que ejecutó el usuario?
+
+    mysql -h somehost.local -uroot -ppassword123
+
+## Contraseñas y claves: archivos de configuración
+
+    /etc/openvpn/auth.txt
+
+
+
+
+
