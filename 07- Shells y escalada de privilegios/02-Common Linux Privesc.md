@@ -43,3 +43,35 @@ esto usando el comando: "openssl passwd -1 -salt [salt] [contraseña]"
 
     new:$1$new$p7ptkEKU1HnaHpRtzNizS1:0:0:root:/bin/bash:
 
+## Escapar del editor de Vi 
+
+Vamos a usar el "sudo -l" de comandos, lo que requiere este usuario (o no necesita) para ejecutar vi como root?
+
+    NOPASSWD
+
+## Explotando Crontab
+
+¿Cuál es la bandera para especificar una carga útil en msfvenom?
+
+    -p
+
+¿En qué directorio se encuentra "autoscript.sh"?
+
+    /home/user4/Desktop
+
+##  Explotación de la variable PATH
+
+Vayamos al directorio de inicio de user5 y ejecutemos el archivo "script" . ¿Qué comando creemos que está ejecutando?
+
+    ls
+
+¿Cómo se vería el comando para abrir un shell bash, escribiendo en un archivo con el nombre del ejecutable que estamos 
+imitando?
+ 
+    echo "/bin/bash" > ls
+
+¡Estupendo! Ahora que hicimos nuestra imitación, necesitamos convertirla en ejecutable. ¿Qué comando ejecutamos para 
+hacer esto?
+
+    chmod +x  ls
+
