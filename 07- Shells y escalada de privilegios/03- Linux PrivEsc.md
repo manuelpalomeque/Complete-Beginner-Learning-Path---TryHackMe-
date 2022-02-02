@@ -18,3 +18,19 @@ Ejecute el comando "id". Cual es el resultado?
 
     password123
 
+## Permisos de archivo débiles - Escribible /etc/passwd
+
+Ejecute el comando "id" como usuario newroot. Cual es el resultado?
+
+    uid=0(root) gid=0(root) groups=0(root)
+
+## Sudo - Secuencias de escape de Shell
+
+¿Cuántos programas puede ejecutar el "usuario" a través de sudo? 
+ 
+    11
+
+Un programa de la lista no tiene una secuencia de escape de shell en GTFOBins. ¿Cuál es?
+
+    Apache2
+
