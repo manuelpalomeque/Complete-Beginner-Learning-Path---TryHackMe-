@@ -50,6 +50,12 @@ Un programa de la lista no tiene una secuencia de escape de shell en GTFOBins. �
 
     /etc/openvpn/auth.txt
 
+## NFS
+
+¿Cuál es el nombre de la opción que deshabilita el aplastamiento de raíces?
+
+    no_root_squash
+
 
 
 
