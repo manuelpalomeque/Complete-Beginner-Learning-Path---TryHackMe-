@@ -23,3 +23,29 @@ Usando el indicador nmap -n,  ¿qué no resolverá?
 ¿En qué puerto se está ejecutando el servidor web?
 
     3333
+
+##  Localización de directorios usando GoBuster
+
+¿Cuál es el directorio que tiene una página de formulario de carga?
+
+    /internal/
+
+## Comprometer el servidor web
+
+Intente cargar algunos tipos de archivos en el servidor, ¿qué extensión común parece estar bloqueada?
+
+    .php
+
+Ejecute este ataque, ¿qué extensión está permitida?
+
+    .phtml
+
+¿Cuál es el nombre del usuario que administra el servidor web?
+
+    bill
+
+¿Qué es la bandera de usuario?
+
+    8bd7992fbe8a6ad22a63361004cfcedb
+
+
