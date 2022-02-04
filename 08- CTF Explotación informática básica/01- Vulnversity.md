@@ -48,4 +48,13 @@ Ejecute este ataque, ¿qué extensión está permitida?
 
     8bd7992fbe8a6ad22a63361004cfcedb
 
+##  Escalada de privilegios
 
+En el sistema, busque todos los archivos SUID. ¿Qué archivo se  destaca?
+
+    /bin/systemctl
+
+Conviértase en root y obtenga la última bandera (/root/root.txt)
+
+    a58ff8579f0a9270369d33a9966c7fd5
+    
