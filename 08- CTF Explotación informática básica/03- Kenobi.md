@@ -38,3 +38,17 @@ Searchsploit es básicamente una herramienta de búsqueda de línea de comandos 
 
     s0b0f3f53b6caa532a83915e19224899
 
+## Escalada de privilegios con manipulación de variables de ruta
+
+¿Qué archivo se ve particularmente fuera de lo común? 
+ 
+    /usr/bin/menu
+
+Ejecute el binario, ¿cuántas opciones aparecen?
+
+    3
+
+¿Qué es el indicador raíz (/root/root.txt)?
+
+    177b3cd8562289f37382721c28381f02
+
