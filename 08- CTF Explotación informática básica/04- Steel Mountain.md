@@ -22,3 +22,13 @@ Utilice Metasploit para obtener un shell inicial. ¿Qué es la bandera de usuari
 
     b04763b6fcf51fcd7c13abc7db4fd365
 
+## Escalada de privilegios
+
+Preste mucha atención a la opción CanRestart que está establecida en true. ¿Cuál es el nombre del servicio que aparece
+como una vulnerabilidad de ruta de servicio no citada ?
+
+    AdvancedSystemCareService9
+
+¿Qué es la bandera raíz?
+
+    9af5f314f57607c00fd09803a587db80
