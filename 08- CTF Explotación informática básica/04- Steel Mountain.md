@@ -32,3 +32,9 @@ como una vulnerabilidad de ruta de servicio no citada ?
 ¿Qué es la bandera raíz?
 
     9af5f314f57607c00fd09803a587db80
+
+## Acceso y escalada sin Metasploit
+
+¿Qué comando powershell -c podríamos ejecutar para averiguar manualmente el nombre del servicio?
+
+    powershell -c "GetService"
