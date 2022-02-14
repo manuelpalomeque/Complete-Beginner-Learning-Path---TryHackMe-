@@ -24,3 +24,14 @@ Imprime el MOTD. ¿Qué bebida favorita se muestra?
  
     DR PEPPER
 
+## [Severity 2] Broken Authentication Practical
+
+¿Cuál es la bandera que encontraste en la cuenta de Darren?
+ 
+    fe86079416a21a3c99937fea8874b667
+ 
+Ahora intente hacer el mismo truco y vea si puede iniciar sesión como arthur. 
+¿Cuál es la bandera que encontraste en el relato de Arthur?
+
+    s9ac0f7db4fda460ac3edeb75d75e16e
+
