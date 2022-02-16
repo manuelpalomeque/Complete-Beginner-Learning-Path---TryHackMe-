@@ -58,3 +58,20 @@ Inicie sesión como administrador. ¿Qué es la bandera?
 
     THM{Yzc2YjdkMjE5N2VjMzNhOTE3NjdiMjdl}
 
+## [Severity 4 XML External Entity - eXtensible Markup Language
+
+Forma completa de XML
+ 
+    eXtensible Markup Language
+
+¿Es obligatorio tener XML prólogo en los documentos XML?
+ 
+    no
+
+¿Podemos validar documentos XML con un esquema?
+ 
+    yes
+ 
+¿Cómo podemos especificar la versión XML y la codificación en un documento XML?
+
+    XML prolog
